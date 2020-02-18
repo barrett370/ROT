@@ -1,7 +1,7 @@
 ---
 title: "Interviews"
 TOC: true
-draft: true
+draft: false 
 ---
 
 # Student
