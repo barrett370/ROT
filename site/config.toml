@@ -1,5 +1,5 @@
 languageCode = "en-uk"
-baseURL = "sam-barrett.codes/ROT/"
+baseURL = "https://www.sam-barrett.codes/ROT/"
 title = "Room Occupancy Tracking"
 theme = "aether"
 canonifyurls = true
