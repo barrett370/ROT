@@ -1,8 +1,8 @@
 languageCode = "en-uk"
-baseURL = "sam-barrett.codes/ROT"
+baseURL = "sam-barrett.codes/ROT/"
 title = "Room Occupancy Tracking"
 theme = "aether"
-canonifyurls=true
+canonifyurls = true
 publishDir = "../docs"
 
 [params]
