@@ -3,7 +3,6 @@ baseURL = "https://www.sam-barrett.codes/ROT/"
 title = "Room Occupancy Tracking"
 theme = "aether"
 canonifyurls = true
-publishDir = "../docs"
 
 [params]
 brand = "IOT Group3 : Room Occupancy Tracking"
