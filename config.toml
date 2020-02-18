@@ -1,8 +1,6 @@
 languageCode = "en-uk"
-baseURL = "https://www.sam-barrett.codes/ROT/"
 title = "Room Occupancy Tracking"
 theme = "learn"
-canonifyurls = true
 
 [params]
 brand = "IOT Group3 : Room Occupancy Tracking"
