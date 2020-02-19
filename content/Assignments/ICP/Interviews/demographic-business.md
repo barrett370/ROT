@@ -5,17 +5,13 @@ date: 2020-02-19T16:49:51.337Z
 ## Do you have a system for tracking free space?
 Teams currently get priority on some desks
 
-We have some assigned desks which can be used but have to be vacated if the assigned person turns up.
-Currently have to walk around to find a desk.
-
-Limited standing desks, but don't know where they are.
-
-Desks have different facilities (screens etc), some stuff broken. 
+* We have some assigned desks which can be used but have to be vacated if the assigned person turns up.
+* Currently have to walk around to find a desk.
+* Limited standing desks, but don't know where they are.
+* Desks have different facilities (screens etc), some stuff broken. 
 Saves time by going to a desk that has everything I need.
-
-Some people go and use breakout areas as desks when it's very busy(these have no power), study booths. None of these can be booked.
-
-Currently there is a person you can ask in each space what is available (group space / desks)
+* Some people go and use breakout areas as desks when it's very busy(these have no power), study booths. None of these can be booked.
+* Currently there is a 'manager' for each breakout space you can ask what is available including what types space / desks
 
 
 
