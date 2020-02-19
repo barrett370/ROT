@@ -14,15 +14,14 @@ Saves time by going to a desk that has everything I need.
 * Currently there is a 'manager' for each breakout space you can ask what is available including what types space / desks
 
 
+## What detail about availability would be useful
 
-## in how much detail do you want to know there is space
-
-It would useful to know how busy each floor or area is since that would save you time in searching areas.
+It would useful to know how busy each floor or area is since that would save you time in searching each area.
 
 
-## if it was shit would you still use it?
+## How much 'inconvenience' would you be willing to tolerate as opposed to the current solution?
 
-A: if it slowed down the process compared to just wondering around looking for space.
+If it slowed down the process compared to just wandering around looking for space.
 "Just in time booking" so you could book a space from your phone on the way in. "are there any standing desks? Okay I'll be there in 10 minutes"
 
 I'd still want to be able to just walk up to an empty desk and "check in"
