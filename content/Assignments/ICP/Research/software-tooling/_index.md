@@ -1,6 +1,6 @@
 ---
 title: Software tooling
-draft: true
+draft: false
 ---
 
 ## Data Representation & Storage
@@ -11,7 +11,6 @@ InfluxDB, 2.0 specifically, is a prime candidate for the storage solution to a p
 
 Featuring heavy Grafana integration in the newest 2.0 version, the representation of data to the developer is very clear and easy to work with. Clearly the data stored in the database would require post-processing in order to derive the occupancy of a given room as data such as ambient temperature or CO2 readings are not of interest to the user. 
 
-![InfluxDB Dashboard](/img/IDBDashboard.png)
 
 #### Interfacing 
 
