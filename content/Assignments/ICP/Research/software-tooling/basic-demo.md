@@ -25,7 +25,6 @@ import (
 var INFLUX_TOKEN string
 
 func DBConnect() (*influxdb.Client, error) {
-	// You can generate a Token from the "Tokens Tab" in the UI
 	client := http.Client{}
 	return influxdb.New("https://us-central1-1.gcp.cloud2.influxdata.com", INFLUX_TOKEN, influxdb.WithHTTPClient(&client))
 }
@@ -37,14 +36,11 @@ type SensorReport struct {
 
 func main() {
 	DBConnect()
-	// we use client.NewRowMetric for the example because it's easy, but if you need extra performance
-	// it is fine to manually build the []client.Metric{}.
 	influx, err := DBConnect()
 	if err != nil {
 		panic(err)
 	}
 	watch_sensors(influx)
-	// The actual write..., this method can be called concurrently.
 }
 
 func watch_sensors(influx *influxdb.Client) {
@@ -55,7 +51,6 @@ func watch_sensors(influx *influxdb.Client) {
 	}
 	defer watcher.Close()
 
-	//
 	done := make(chan bool)
 
 	//
@@ -86,10 +81,10 @@ func watch_sensors(influx *influxdb.Client) {
 				}
 				_, err = influx.Write(context.Background(), "my-test-bucket", "833c7fbc1d19c9be", myMetric...)
 				if err != nil {
-					log.Fatal(err) // as above use your own error handling here.
+					log.Fatal(err) 
 				}
 				watch_sensors(influx)
-				// watch for errors
+				
 			case err := <-watcher.Errors:
 				fmt.Println("ERROR", err)
 			}
