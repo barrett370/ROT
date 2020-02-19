@@ -24,7 +24,7 @@ func DBConnect() (*influxdb.Client, error) {
 
 type SensorReport struct {
 	CO2         float64 `json:"CO2"`
-	Temperature int     `json:"Temperature"`
+	Temperature float64 `json:"Temperature"`
 }
 
 func main() {
@@ -35,6 +35,12 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	watch_sensors(influx)
+	// The actual write..., this method can be called concurrently.
+}
+
+func watch_sensors(influx *influxdb.Client) {
+
 	watcher, err := fsnotify.NewWatcher()
 	if err != nil {
 		fmt.Println("ERROR", err)
@@ -62,6 +68,7 @@ func main() {
 					log.Fatal(err)
 				}
 				json.Unmarshal(fileBytes, &report)
+				fmt.Printf("%+v\n", report)
 				myMetric := []influxdb.Metric{
 					influxdb.NewRowMetric(
 						map[string]interface{}{"CO2": report.CO2, "temperature": report.Temperature},
@@ -73,6 +80,7 @@ func main() {
 				if err != nil {
 					log.Fatal(err) // as above use your own error handling here.
 				}
+				watch_sensors(influx)
 				// watch for errors
 			case err := <-watcher.Errors:
 				fmt.Println("ERROR", err)
@@ -86,5 +94,4 @@ func main() {
 	}
 
 	<-done
-	// The actual write..., this method can be called concurrently.
 }
