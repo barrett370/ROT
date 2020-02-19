@@ -8,13 +8,28 @@ date: 2020-02-18
 {{<mermaid>}}
 gantt
         dateFormat DD-MM
-        axisFormat _
-        Write up interviews                             :done,   fsc1, 18-02,           5h
-        What data to collect?                           :active, aat1, after fsc1,      2h
-        What do we want to show?                        :active, fsc2, after fsc1,      3h
-        Assess Arduino vs Pi vs Arduino and Pi          :        aat2, after aat1,      3h
-        Data collection methods                         :        aat4, after aat2,      2h
-        How do we relay the data                        :        aat5, after aat2,      3h
-        How do we want to present the data              :        fsc5, after aat2,      3h
-        Language Choice                                 :        aat3, after aat4 aat5, 2h
+        axisFormat %d/%m
+        title                                           Outline of Tasks
+
+        section                                         Research
+        Research focus points                           :fsc1, 11-02,           1h
+        Survays                                         :fsc2, after fsc1,      3h
+        Interviews                                      :fsc3, after fsc1,      5h
+        Personas                                        :fsc4, after fsc2,      2h
+        Desk Research                                   :fsc4, after fsc2,      2h
+
+        section                                         Conceptual Design
+        What data to collect?                           :aat1, after fsc3,      3h
+        What do we want to show?                        :fsc5, after fsc3,      3h
+
+        section                                         Technical Design
+        Hardware comparison                             :aat2, after aat1,      3h
+        Data collection                                 :aat4, after aat2,      2h
+        Data distribution                               :aat5, after aat2,      3h
+        Data representation                             :fsc5, after aat2,      3h
+
+        section                                         Prototyping
+        Language Choice                                 :aat3, after aat4 aat5, 2h
+        First device build                              :prt1, after aat4,      3h
+        Metric ingress                                  :prt2, after aat5,      3h
 {{</mermaid>}}
