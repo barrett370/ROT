@@ -21,31 +21,27 @@ It would useful to know how busy each floor or area is since that would save you
 
 ## How much 'inconvenience' would you be willing to tolerate as opposed to the current solution?
 
-If it slowed down the process compared to just wandering around looking for space.
-"Just in time booking" so you could book a space from your phone on the way in. "are there any standing desks? Okay I'll be there in 10 minutes"
+If it became an additional step that I had to stop for in the morning then I'd probably just resort to walking around.
 
-I'd still want to be able to just walk up to an empty desk and "check in"
-
-A: maybe but i also might end up just looking around instead
-
-## are you likely to use the same desk all day
+## Are you likely to use the same desk all day
 A: some roles would probably use the same desk all day whereas I would likely use it for a few hours and then go out of the office for meetings.
 Some people would take a desk and then go into meetings for an hour while leaving their stuff at the desk.
 
 ## would you be willing to "sign into" a desk to mark it as taken
 
+"Just in time booking" so you could book a space from your phone on the way in. "are there any standing desks? Okay I'll be there in 10 minutes"
 
-## do you see people failing to log out of a desk being an issue
+I'd still want to be able to just walk up to an empty desk and "check in"
 
 ## would you want this applied to all desks
 
-## how long should people be able to book a desk for
+## How long should people be able to book a desk for
 Our study booths are only meant to be used for 2 hours at a time and we currently have no way of tracking them.
 Meeting rooms are effectively the same thing but these must be booked by name. If you haven't signed into the room in the first 15 minutes of the booking then anyone can use it.
 
 Client / dining rooms have to be booked through a person.
 
-## who should be able to book a desk / should visitors be able to? (Clients/visitors/contractors)
+## Who should be able to book a desk / should visitors be able to? (Clients/visitors/contractors)
 
 It would be good for temporary contractors to be able to book space while they are there.
 
