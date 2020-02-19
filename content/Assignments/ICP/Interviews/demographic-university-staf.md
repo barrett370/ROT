@@ -1,5 +1,5 @@
 ---
-title: 'Demographic: University Staf'
+title: 'Demographic: University Staff'
 date: 2020-02-19T18:47:13.710Z
 ---
 This interview was conducted with a member of staff at the university who has experience with the current occupancy system.
