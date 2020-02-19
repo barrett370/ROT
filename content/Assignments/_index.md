@@ -1,8 +1,7 @@
 ---
-title: "Assignment"
-date: 2020-02-18T15:19:44Z
-mermaid: true
-draft: true 
+Mermaid: true
+title: Assignment
+date: 2020-02-18T15:19:44.000Z
 ---
 
 {{<mermaid>}}
