@@ -1,5 +1,5 @@
 ---
-title: 'Demographic: Business'
+title: 'Demographic: Business / Offices'
 date: 2020-02-19T16:49:51.337Z
 ---
 ## Do you have a system for tracking free space?
