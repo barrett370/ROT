@@ -6,3 +6,6 @@ theme = "learn"
 brand = "IOT Group3 : Room Occupancy Tracking"
 description = "Site showing development process for 3rd Year Software Design Study"
 themeVariant = "red"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
