@@ -2,10 +2,10 @@
 title: 'Demographic: Business'
 date: 2020-02-19T16:49:51.337Z
 ---
-## do you have a system for tracking free space
+## Do you have a system for tracking free space?
 Teams currently get priority on some desks
 
-Some assigned desks, can use desks but have to move if the assigned person turns up.
+We have some assigned desks which can be used but have to be vacated if the assigned person turns up.
 Currently have to walk around to find a desk.
 
 Limited standing desks, but don't know where they are.
