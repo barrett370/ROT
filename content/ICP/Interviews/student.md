@@ -1,9 +1,12 @@
 ---
-title: Student
-description: Survey
+title: 'Survey: Student'
+description: >-
+  The students of Universities implementing ROT systems are the major users and
+  as such their views should play a pivotal role in the design and
+  implementation of such systems.
 date: 2020-02-20T14:24:39.498Z
 ---
-The students of Universities implementing ROT systems are the major users and as such their views should play a pivotal role in the design and implementation of such systems. From the interview conducted [here](/assignments/icp/interviews/student) we can see that the current system fails to live up to the expectation of the main user-group, leaving a lot of room for improvement for our service.
+ From the interview conducted [here](/assignments/icp/interviews/student) we can see that the current system fails to live up to the expectation of the main user-group, leaving a lot of room for improvement for our service.
 
 ## Do you currently use the University's room occupancy tracking system?
 
