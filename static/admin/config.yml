@@ -7,31 +7,9 @@ media_folder: "static/images/uploads" # Media files will be stored in the repo u
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - name: "Assignment" # Used in routes, e.g., /admin/collections/blog
-    label: "Assignments" # Used in the UI
-    folder: "content/Assignments" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "mermaid", name: "Mermaid",hidden: "true", widget: "boolean", default: "false"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
-
-  - name: "Topology" # Used in routes, e.g., /admin/collections/blog
-    label: "Topology" # Used in the UI
-    folder: "content/Assignments/ICP/Design" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "mermaid", name: "Mermaid",hidden: "true", widget: "boolean", default: "false"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
-
   - name: "Interview" # Used in routes, e.g., /admin/collections/blog
     label: "Interview" # Used in the UI
-    folder: "content/Assignments/ICP/Interviews" # The path to the folder where the documents are stored
+    folder: "content/ICP/Interviews" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
