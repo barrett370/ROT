@@ -22,6 +22,10 @@ With the idea of ease of use comes cleanliness. Having a clean and simple design
 
 One of the main design principles at the moment is material design. This design can be found across the google suite of products including android. This design methodology strongly follows the idea of clean and simple design in order to help the user. Everything in your design should be intuitive, removing the need for long explanatory tool tips or large manuals.
 
+## Colour 
+
+Colour can often be overlooked as just an aesthetic choice, but colour can play a large role in guiding the user through your interface. 
+
 
 
 
