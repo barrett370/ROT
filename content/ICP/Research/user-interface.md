@@ -42,8 +42,10 @@ Another aspect we have thought about is how to present the data. As seen in othe
 
 The most simplest of the methods would be a purely text based method which lists the rooms and then lists the occupancy. This approach is simple and easy to read and can often be found on websites status pages. Combined with colour it would make it the ideal choice if it was not for the fact that it struggles to scale as it can get messy with more and more locations.
 
-
-
 ![](/images/uploads/reddit.PNG)
 
-This can be expanded if you want to represent the status over time as can be seen below
+This can be expanded if you want to represent the status over time as can be seen below:
+
+
+
+![](/images/uploads/reddit2.PNG)
