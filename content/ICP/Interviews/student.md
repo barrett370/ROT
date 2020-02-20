@@ -1,5 +1,5 @@
 ---
-title: 'Survey: Student'
+title: Student Survey
 description: >-
   The students of Universities implementing ROT systems are the major users and
   as such their views should play a pivotal role in the design and
@@ -14,7 +14,7 @@ date: 2020-02-20T14:24:39.498Z
 
 ### No 
 
-#### Why do you not use the current system?
+#### Why wouldn't you use the current system, if not?
 
 ![Q2](/img/SINTQ2.png)
 
