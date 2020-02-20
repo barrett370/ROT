@@ -34,6 +34,16 @@ On top of this in this day and age there is a huge demmand for a dark mode. Thou
 
 The final and most important aspect of colour is visibility. The text should be easily readable. This means picking two highly contrasting colours for text and background. The higher the contrasting the easier it is to read for all abilities incliding those with parital sight. Google has a great tool for this which automaticlly picks colours for your text based on your background and will tell you how accessable they are: https://material.io/resources/color.
 
-
-
 ![](/images/uploads/colour.PNG "Google Colour Picker")
+
+## Presenting Data
+
+Another aspect we have thought about is how to present the data. As seen in other sections we having explored technologies such as grafana to do this but on a much lower level we need to think about what ways we want to present data. 
+
+The most simplest of the methods would be a purely text based method which lists the rooms and then lists the occupancy. This approach is simple and easy to read and can often be found on websites status pages. Combined with colour it would make it the ideal choice if it was not for the fact that it struggles to scale as it can get messy with more and more locations.
+
+
+
+![](/images/uploads/reddit.PNG)
+
+This can be expanded if you want to represent the status over time as can be seen below
