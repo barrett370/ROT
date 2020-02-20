@@ -14,12 +14,9 @@ Notice that all of these approaches are relatively non-invasive, with none requi
 
 ## Entryway traffic tracking
 
-This proposed system would work via a doorway mounted laser depth sensor. By mounting the sensor at a (*known*) angle, we can calculate the direction of travel of an individual. This simple sensor and post-processing algorithm would allow us to maintain a record of entrances and exits from a given doorway and with a backing system aware of the relative positions of the devices, we could extrapolate numbers of people in each building or room. 
-This system requires no camera or personal data to be collected and only one sensor per device, relatively low in cost.
-
+This proposed system would work via a doorway mounted laser depth sensor. By mounting the sensor at a (*known*) angle, we can calculate the direction of travel of an individual. This simple sensor and post-processing algorithm would allow us to maintain a record of entrances and exits from a given doorway and with a backing system aware of the relative positions of the devices, we could extrapolate numbers of people in each building or room.  This system requires no camera or personal data to be collected and only one sensor per device, relatively low in cost.
 
 ![ETT](/images/uploads/SDSDesignApproach1.jpg)
-
 
 ## Per-table tracking
 
@@ -31,4 +28,4 @@ This system would be quite similar to the one currently implemented, with under-
 
 This system would rely on the gathering of metrics such as ambient temperature, humidity or CO2 levels in order to extrapolate ,via heuristics,the number of people in a given space. This system would be more expensive per unit due to the requirement of several delicate sensors. However, it would allow for a more subtle placement not requiring a location above a doorway or under a table. It's accuracy would, however, be dependent on experimentation on a case by case basis as occupancies can lead to wildly different readings, based on multitude of factors such as: size of room, whether windows are open, whether the heating is on etc. 
 
-![AET](/img/SDSDesignApproach3.jpg)
+![AET](/images/uploads/SDSDesignApproach3.jpg)
