@@ -112,6 +112,6 @@ func watch_sensors(influx *influxdb.Client) {
 The code above watches for changes in a given file `sensor-readings.json` and upon changes unmarshals the contents to a Go struct. This struct is then used to fill out a influxDB metric for writing to a given bucket. 
 This code is a proof of concept, showing that if we were to record sensor data to a json structured format, we could easily and reliably push this data to our database retaining its structure and time sensitive nature. Running this script results in the following results being displayed from within InfluxDBs query dashboard:
 
-![InfluxDB Dashboard](/uploads/images/IDBDashboard.png)
+![InfluxDB Dashboard](/images/uploads/IDBDashboard.png)
 
 Another advantage of a compiled language such as Go, is that we can make use of *compile time variable injection* to embed sensitive information such as our database access token into the binary which can then be placed on our embedded system without the need for a plaintext version of the token to be stored on these devices in the public domain. Go also produces a statically linked compiled binary allowing for it to be run on any supporting system without additional software or libraries to be installed along with it.
