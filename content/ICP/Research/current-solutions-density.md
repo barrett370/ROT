@@ -5,7 +5,7 @@ description: >-
   buildings
 ---
 Density offers a solution to room occupancy monitoring that uses active IR sensors and time of flight (TOF) to detect humans entering and exiting rooms.
-0
+
 ![](/images/uploads/image-fov@2x.jpg)
 
 
