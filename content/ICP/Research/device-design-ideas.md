@@ -4,13 +4,13 @@ description: >-
   Investigating different approaches and the hardware/ software systems they
   would require
 ---
-There are 3 major sensor-based approaches we have thought of pursuing. 
+There are 3 major sensor-based approaches we have considered pursuing. 
 
-1. Entryway traffic based tracking
+1. Entryway traffic-based tracking
 2. Per-table based tracking
 3. Ambient environment tracking
 
-Notice that all of these approaches are relatively non-invasive with none requiring the use of cameras. 
+Notice that all of these approaches are relatively non-invasive, with none requiring the use of cameras. 
 
 ## Entryway traffic tracking
 
@@ -23,13 +23,12 @@ This system requires no camera or personal data to be collected and only one sen
 
 ## Per-table tracking
 
-This system would be quite similar to the one currently implemented, with under-table mounted laser sensors allowing the system to accurately determine how many people are surrounding the given area. A downside to this is it's expense with each table in a given space requiring a sensor array and computer to process and upload the data. This system also does not work for spaces that have non-standard seating arrangements such as single seat booths found in the library and Aston Webb building. 
+This system would be quite similar to the one currently implemented, with under-table mounted laser sensors allowing the system to accurately determine how many people are surrounding the given area. A downside to this is it's expensive, with each table in a given space requiring a sensor array and a computer to process and upload the data. This system also does not work for spaces that have non-standard seating arrangements such as single seat booths found in the library and Aston Webb building. 
 
 ![PTT](/img/SDSDesignApproach2.jpg)
 
 ## Ambient environment Tracking
 
-This system would rely on the gathering of metrics such as ambient temperature, humidity or CO2 levels in order to extrapolate ,via heuristics,the number of people in a given space. 
-This system would be more expensive per unit due to the requirement of several delicate sensors. However, it would allow for a more subtle placement not requiring a location above a doorway or under a table. It's accuracy would however, be dependent on experimentation on a per-space basis as occupancies can lead to wildly different reading based on multitude of factors such as: size of room, are there any windows open or whether the heating is on etc. 
+This system would rely on the gathering of metrics such as ambient temperature, humidity or CO2 levels in order to extrapolate ,via heuristics,the number of people in a given space. This system would be more expensive per unit due to the requirement of several delicate sensors. However, it would allow for a more subtle placement not requiring a location above a doorway or under a table. It's accuracy would, however, be dependent on experimentation on a case by case basis as occupancies can lead to wildly different readings, based on multitude of factors such as: size of room, whether windows are open, whether the heating is on etc. 
 
 ![AET](/img/SDSDesignApproach3.jpg)
