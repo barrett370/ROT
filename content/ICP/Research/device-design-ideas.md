@@ -25,7 +25,7 @@ This system requires no camera or personal data to be collected and only one sen
 
 This system would be quite similar to the one currently implemented, with under-table mounted laser sensors allowing the system to accurately determine how many people are surrounding the given area. A downside to this is it's expensive, with each table in a given space requiring a sensor array and a computer to process and upload the data. This system also does not work for spaces that have non-standard seating arrangements such as single seat booths found in the library and Aston Webb building. 
 
-![PTT](/img/SDSDesignApproach2.jpg)
+![PTT](/images/uploads/SDSDesignApproach2.jpg)
 
 ## Ambient environment Tracking
 
