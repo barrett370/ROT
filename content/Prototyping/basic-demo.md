@@ -1,5 +1,7 @@
 ---
 title: Basic InfluxDB implementation
+weight: 1
+pre: "<b>4.1 </b>"
 ---
 
 After our initial research into InfluxDB and it's client libraries, we decided to complete a trial implementation using Golang as it offered a fast, compiled language that lent itself well to embedded systems and has excellent networking and json parsing libraries.

@@ -1,6 +1,7 @@
 ---
 title: "Research"
-pre: "<b>1.2 </b>"
+weight: 1
+pre: "<b>1. </b>"
 ---
 
 {{% children description="true" %}}
