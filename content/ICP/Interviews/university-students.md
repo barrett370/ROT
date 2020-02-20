@@ -49,4 +49,6 @@ S1: Absolutely. I would use it daily during exam season.
 
 S2: If I am finding it difficult to find a place to work then yes.
 
+# Analysis
+
 These interviews demonstrate how aware current students are of data privacy - how the intended solution should be sleek, unintrusive and accessible - preferably via the web or mobile apps. The results should be accurate in relative real-time and also be fast as the basis for the product is to save time and improve efficiency.
