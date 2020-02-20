@@ -18,7 +18,7 @@ This proposed system would work via a doorway mounted laser depth sensor. By mou
 This system requires no camera or personal data to be collected and only one sensor per device, relatively low in cost.
 
 
-![ETT](/img/SDSDesignApproach1.jpg)
+![ETT](/images/uploads/SDSDesignApproach1.jpg)
 
 
 ## Per-table tracking
