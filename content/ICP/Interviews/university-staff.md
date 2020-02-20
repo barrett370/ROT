@@ -9,20 +9,20 @@ date: 2020-02-20T13:33:29.548Z
 
 
 
-> A: I have tried using the system several times.
+I have tried using the system several times.
 
 
 ## What do you like about the current system?
 
 
 
-> A: Not much, most of the rooms listed are primarily for students so doesn’t relate to myself or my colleagues.
+Not much, most of the rooms listed are primarily for students so doesn’t relate to myself or my colleagues.
 
 ## What do you not like about the current system?
 
 
 
-> A: It seems that the majority of the time the service is down whenever I have tried it.
+It seems that the majority of the time the service is down whenever I have tried it.
 
 
 
@@ -30,7 +30,7 @@ date: 2020-02-20T13:33:29.548Z
 
 
 
-> A: It would be very useful to extend to meeting rooms in departmental buildings so I can easily check if a room is being used or not even when there are no scheduled meetings.
+It would be very useful to extend to meeting rooms in departmental buildings so I can easily check if a room is being used or not even when there are no scheduled meetings.
 
 
 
@@ -38,7 +38,7 @@ date: 2020-02-20T13:33:29.548Z
 
 
 
-> A: It would be really useful to be able to see what are the busiest times so I know when is the best time to visit a room during the day.
+It would be really useful to be able to see what are the busiest times so I know when is the best time to visit a room during the day.
 
 
 
@@ -46,4 +46,4 @@ date: 2020-02-20T13:33:29.548Z
 
 
 
-> A: Primarily on my computer.
+Primarily on my computer.
