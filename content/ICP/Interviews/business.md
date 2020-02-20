@@ -1,5 +1,5 @@
 ---
-title: Business
+title: 'Office '
 description: 'Focus group: Staff working in large hot desk environment'
 date: 2020-02-20T12:40:05.074Z
 ---
