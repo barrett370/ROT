@@ -24,7 +24,9 @@ One of the main design principles at the moment is material design. This design 
 
 ## Colour 
 
-Colour can often be overlooked as just an aesthetic choice, but colour can play a large role in guiding the user through your interface. 
+Colour can often be overlooked as just an aesthetic choice, but colour can play a large role in guiding the user through your interface. An example of this is using a consistent colour scheme throughout your interface. Having titles in one colour, subheadings in another and buttons in another, means that the user knows exactly what they are looking at and if they can interact it just by looking at the colour.
+
+
 
 
 
