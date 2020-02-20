@@ -10,51 +10,51 @@ date: 2020-02-20T14:24:39.498Z
 
 ## Do you currently use the University's room occupancy tracking system?
 
-![Q1](/img/SINTQ1.png)
+![Q1](/images/uploads/SINTQ1.png)
 
 ### No 
 
 #### Why wouldn't you use the current system, if not?
 
-![Q2](/img/SINTQ2.png)
+![Q2](/images/uploads/SINTQ2.png)
 
 #### Have you ever used it?
 
-![Q3](/img/SINTQ3.png)
+![Q3](/images/uploads/SINTQ3.png)
 
 #### If 'Yes', what is the main reason you no longer use it? 
 
-![Q4](/img/SINTQ4.png)
+![Q4](/images/uploads/SINTQ4.png)
 
 ### Yes
 
 #### Do you like the current system?
 
-![Q5](/img/SINTQ5.png)
+![Q5](/images/uploads/SINTQ5.png)
 
 #### Does it cover all the study spaces you use regularly?
 
-![Q6](/img/SINTQ6.png)
+![Q6](/images/uploads/SINTQ6.png)
 
 #### If not, where would you like to see it extended to? 
 
-![Q7](/img/SINTQ7.png)
+![Q7](/images/uploads/SINTQ7.png)
 
 #### Have you ever attempted to use the current system, but found it to be unavailable? 
 
-![Q8](/img/SINTQ8.png)
+![Q8](/images/uploads/SINTQ8.png)
 
 #### Have you ever found the current system to be slow?
 
-![Q9](/img/SINTQ9.png)
+![Q9](/images/uploads/SINTQ9.png)
 
 #### Have you ever found the current system to be unreliable?
 
-![Q10](/img/SINTQ10.png)
+![Q10](/images/uploads/SINTQ10.png)
 
 #### Through what medium would you prefer to access room occupancy information?
 
-![Q11](/img/SINTQ11.png)
+![Q11](/images/uploads/SINTQ11.png)
 
 
 ## Analysis
