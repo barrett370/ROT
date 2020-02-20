@@ -14,7 +14,7 @@ gantt
 
         section                                         Research
         Research focus points                           :fsc1, 11-02,           3h
-        Survays                                         :fsc2, after fsc1,      3h
+        Surveys                                         :fsc2, after fsc1,      3h
         Interviews                                      :fsc3, after fsc1,      5h
         Personas                                        :fsc4, after fsc2,      2h
         Desk Research                                   :fsc4, after fsc2,      2h
