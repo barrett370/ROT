@@ -1,7 +1,7 @@
 ---
 title: "Initial Concept & Improvements"
 date: 2020-02-18
-pre: "<b>1.1 </b>"
+pre: "<b>1. </b>"
 ---
 
 ## Outline of Tasks
@@ -13,7 +13,7 @@ gantt
         title                                           Outline of Tasks
 
         section                                         Research
-        Research focus points                           :fsc1, 11-02,           1h
+        Research focus points                           :fsc1, 11-02,           3h
         Survays                                         :fsc2, after fsc1,      3h
         Interviews                                      :fsc3, after fsc1,      5h
         Personas                                        :fsc4, after fsc2,      2h
