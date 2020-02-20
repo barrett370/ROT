@@ -47,3 +47,7 @@ It would be really useful to be able to see what are the busiest times so I know
 
 
 Primarily on my computer.
+
+## Analysis
+From this interview with a university staff member, it can be seen that extending the system to more than just study spaces and reliability are the main points to improve on from the current system.
+
