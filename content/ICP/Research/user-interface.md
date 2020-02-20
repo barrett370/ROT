@@ -26,6 +26,18 @@ One of the main design principles at the moment is material design. This design 
 
 Colour can often be overlooked as just an aesthetic choice, but colour can play a large role in guiding the user through your interface. An example of this is using a consistent colour scheme throughout your interface. Having titles in one colour, subheadings in another and buttons in another, means that the user knows exactly what they are looking at and if they can interact it just by looking at the colour.
 
+It is extemely important that you think about what colours you want to use, especially as your content is going to be viewed on a number of different devices with different screens and by people with different visual abbilities. 
+
+Some colour may look great on your device but what about devices which manipulate the colour such as night light software to change the hue to a much warmer one during the night. 
+
+On top of this in this day and age there is a huge demmand for a dark mode. Thoughts need to be given to a colour scheme which is dark and can take advantage of OLED technology to save energy.
+
+The final and most important aspect of colour is visibility. The text should be easily readable. This means picking two highly contrasting colours for text and background. The higher the contrasting the easier it is to read for all abilities incliding those with parital sight. Google has a great tool for this which automaticlly picks colours for your text based on your background and will tell you how accessable they are: https://material.io/resources/color.
+
+
+
+ 
+
 
 
 
