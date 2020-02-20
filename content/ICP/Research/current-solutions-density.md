@@ -6,7 +6,7 @@ description: >-
 ---
 Density offers a solution to room occupancy monitoring that uses active IR sensors and time of flight (TOF) to detect humans entering and exiting rooms. The overall system boasts 97-99% accuracy.
 
-![](/images/uploads/image-fov@2x.jpg "A density sensor simulation")
+![](/images/uploads/image-fov@2x.jpg?width=20pc)
 
 ## Workplace Use Case
 
