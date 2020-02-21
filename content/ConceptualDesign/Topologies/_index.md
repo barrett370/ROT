@@ -1,7 +1,8 @@
 ---
 Mermaid: true
 title: Topologies
-pre: "<b>1.3 </b>"
+weight: 2
+pre: "<b>2.2 </b>"
 ---
 
 {{% children description="true" %}}
