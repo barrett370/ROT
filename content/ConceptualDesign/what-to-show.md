@@ -23,7 +23,7 @@ The main goal of our system is to be simple, informative and easy to use. We do 
 
 This view is very *Tangible* with it being immediately obvious the areas of high density without the need for explicit axis or legends, although one may be included for completeness. One must also consider the case of a colour blind person who may struggle to interpret maps such as the one shown above, instead we may opt for a reduced colour pallette or commit to using multiple different information read-outs including more graphical means.
 
-This sort of representation also takes up quite a lot of space in order for it to be clear. As well as it being expensive in terms of space graphics like these can be computationally expensive to generate and update/ redraw.
+This sort of representation also takes up quite a lot of space in order for it to be clear. As well as it being expensive in terms of space graphics like these can be computationally expensive to generate and update / redraw.
 
 
 ## Gauge Representation 
