@@ -14,6 +14,7 @@ pre: "<b>1.6 </b>"
 * Peter is pretty relaxed about where he sits - as long as he has access to a computer
 * Peter can't afford a laptop so library computer access is very important to him
 * Peter reads and takes out books a lot - he is a avid user on the library system
+* Peter commutes from Redditch - he takes a train and a bus which takes around 50 mins in total one way from home to University
 * Peter suffers from Chronic Fatigue Syndrome - he needs to sleep for 9 or 10 hours each day to feel energised.
 
 ## Peter's Situation
@@ -26,7 +27,13 @@ pre: "<b>1.6 </b>"
 
 ## How we could help Peter
 
-* 
+* Our product could make Peter aware of other suitable study spaces on campus
+* It could give him the most applicable study space - such as ones fitted with general purpose computers.
+* It would make Peter aware of the best times to come in
+* It could alert Peter when his preferred study space is free
+* It would cut down on his time wasted commuting and searching for a seat when coming into campus
+* He would no longer commute and find no space for himself
+* It would help him study efficiently
 
 
 
