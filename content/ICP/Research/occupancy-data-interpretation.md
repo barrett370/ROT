@@ -33,4 +33,4 @@ Simplicity
 Colour issues
 Differnet types of colour
 
-Seen at a glance, not very detail
+Seen at a glance, not very detailed
