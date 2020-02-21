@@ -2,8 +2,6 @@
 title: Physical Design
 description: Blending In
 ---
-
-
 The aim of the physical devices is set and forget. Once installed in place they shouldn't need to be touch physically and should be left alone. In this section we will look into possible designs to achieve this.
 
 ## Don't touch
@@ -14,4 +12,8 @@ Another apporach is making it so boring that people don't want to touch it and t
 
 ![](/images/uploads/cad.PNG)
 
-The second design hopes to reduce tampering alltogether by removing it by arms reach. Here the unit is designed to be ceiling mounted with the power supply elsewhere. With this design the unit should become pretty much impossible to mess with for the average person. The downside of this design is that it requires significant overhead compared to the other one. Number one can just be plugged into the socket where as number two requires someone to come install it on the ceiling.
+The second design hopes to reduce tampering altogether by removing it by arms reach. Here the unit is designed to be ceiling mounted with the power supply elsewhere. With this design the unit should become pretty much impossible to mess with for the average person. The downside of this design is that it requires significant overhead compared to the other one. Number one can just be plugged into the socket where as number two requires someone to come install it on the ceiling.
+
+![](/images/uploads/1.PNG)
+
+![](/images/uploads/2.PNG)
