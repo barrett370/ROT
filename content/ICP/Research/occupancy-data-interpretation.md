@@ -17,6 +17,8 @@ Colour representations allow you to simplify information to a level where you ca
 
 ### Gradient
 
+A gradient of colour could be considered a seamless representation of percentage occupancy and could be applied to still provide an interpretation that can be processed from just entering the peripheral view.
+
 ### Traffic Light
 
 
