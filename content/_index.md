@@ -3,7 +3,7 @@ title: "Home"
 showhidden: true
 ---
 
-# Welcome! 🎉🎉
+# Welcome! 🎉
 
 We are developing a Open Source Room Occupancy Tracking System for use primarily in educational institutions, providing students with accurate, real-time information on the current occupancy of study spaces across campuses.
 
