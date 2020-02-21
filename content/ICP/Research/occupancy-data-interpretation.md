@@ -21,6 +21,9 @@ A gradient of colour could be considered a seamless representation of percentage
 
 ### Traffic Light
 
+Using a "traffic light" code to indicate occupancy presents information in an already widely understood standard.
+![Grafana Traffic Light](https://grafana.com/static/img/docs/v45/singlestat-color-options.png)
+
 
 Simplicity
 Colour issues
