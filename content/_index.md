@@ -21,7 +21,7 @@ You can find an "up to date" breakdown [here](/progress) of what we are working 
 
 ---
 
-## Team Members 😀😀😀😀😀
+## Team Members 😀
 
 - Jon Freer
 - Sam Barrett
