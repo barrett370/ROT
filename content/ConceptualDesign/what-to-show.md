@@ -54,6 +54,8 @@ In the sketch above, you can intuitively see that the tall building has the most
 
 ![Next Level Heatmap](/images/uploads/hmid-8.jpg)
 
-We could be yet more granular showing specific seat occupancy for a given room such as in the following sketch: 
+We could be yet more granular showing specific seat occupancy for a given room such as in the following sketch:
 
 ![Room Occupancy](/images/uploads/hmroom-9.jpg)
+
+A system as high resolution as this may prove too costly to implement with it requiring sensors on a per-set basis and with some study spaces having hundreds of seats this would put high strain on the network as well as the University's budget. A room based approach could more easily be achieved, giving an overview of a rooms business as opposed to specific free seats.
