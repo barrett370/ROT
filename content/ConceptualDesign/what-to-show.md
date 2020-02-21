@@ -19,7 +19,7 @@ The main goal of our system is to be simple, informative and easy to use. We do 
 ## Heatmap layout
 
 
-![Heatmap display](/images/uploads/heatmap.png)
+![Heatmap display](/images/uploads/heatmap2.png)
 
 This view is very *Tangible* with it being immediately obvious the areas of high density without the need for explicit axis or legends, although one may be included for completeness. One must also consider the case of a colour blind person who may struggle to interpret maps such as the one shown above, instead we may opt for a reduced colour pallette or commit to using multiple different information read-outs including more graphical means.
 
