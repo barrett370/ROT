@@ -4,7 +4,7 @@ description: A look into the design of user interfaces
 ---
 ## Introduction
 
-The user interface is of extreme importance to this project, as it is the portal to which the user will actually experience the product. A user interface is make or break when it comes to a users interactions and impressions of your project. If the data is there but it is tedious to access and presented in ways which are not intuitive and easy to read then people will not want to use your project. An example of this is the universities timetabling system, a system so bad users are happy to hand over their login details to a random party just so they can get out of using it.
+The user interface is of extreme importance to this project, as it is the portal to which the user will actually experience the product. A user interface is make or break when it comes to a users interactions and impressions of your project. If the data is there but it is tedious to access and presented in ways which are not intuitive and easy to read then people will not want to use your product. An example of this is the universities timetabling system, a system so bad users are happy to hand over their login details to a random party just so they can get out of using it.
 
 ## Standing on the shoulders of giants
 
@@ -22,19 +22,21 @@ With the idea of ease of use comes cleanliness. Having a clean and simple design
 
 One of the main design principles at the moment is material design. This design can be found across the google suite of products including android. This design methodology strongly follows the idea of clean and simple design in order to help the user. Everything in your design should be intuitive, removing the need for long explanatory tool tips or large manuals.
 
+### "The blah blah blah blah blah"
+
 For our project we will be following these guides.
 
 ## Colour
 
 Colour can often be overlooked as just an aesthetic choice, but colour can play a large role in guiding the user through your interface. An example of this is using a consistent colour scheme throughout your interface. Having titles in one colour, subheadings in another and buttons in another, means that the user knows exactly what they are looking at and if they can interact it just by looking at the colour.
 
-It is extemely important that you think about what colours you want to use, especially as your content is going to be viewed on a number of different devices with different screens and by people with different visual abilities. 
+It is extremely important that you think about what colours you want to use, especially as your content is going to be viewed on a number of different devices with different screens and by people with different visual abilities. 
 
 Some colour may look great on your device but what about devices which manipulate the colour such as night light software to change the hue to a much warmer one during the night. 
 
 On top of this in this day and age there is a huge demand for a dark mode. Thoughts need to be given to a colour scheme which is dark and can take advantage of OLED technology to save energy.
 
-The final and most important aspect of colour is visibility. The text should be easily readable. This means picking two highly contrasting colours for text and background. The higher the contrasting the easier it is to read for all abilities incliding those with parital sight. Google has a great tool for this which automatically picks colours for your text based on your background and will tell you how accessable they are: https://material.io/resources/color.
+The final and most important aspect of colour is visibility. The text should be easily readable. This means picking two highly contrasting colours for text and background. The higher the contrasting the easier it is to read for all abilities including those with partial sight. Google has a great tool for this which automatically picks colours for your text based on your background and will tell you how accessable they are: https://material.io/resources/color.
 
 ![](/images/uploads/colour.PNG "Google Colour Picker")
 
