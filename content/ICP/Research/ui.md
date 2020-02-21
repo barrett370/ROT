@@ -20,7 +20,7 @@ As finding any space is the highest important to students, in our design we have
 
 Often students didn't a specific room, they wanted a much wider impression of occupancy across campus. An example of this is students wanted to know what was more busy, the library or the sports center. They often didn't much care about specific rooms but just wanted know which buildings are low occupancy. 
 
-To help communicate this, this information will also be displayed on the main view under the specific rooms. It will show a list of each of the top occupancy for whole locations. This will allow users to know which building is best in general, instead of a specific room. 
+To help communicate this, information will also be displayed on the main view under the specific rooms. It will show a list of each of the top occupancy for whole locations. This will allow users to know which building is best in general, instead of a specific room. 
 
 A pro of doing building based ranking is that the occupancy will be much less volatile. The amount of people that it will take to fill up a building as opposed to a single room is much higher which means that it is less likely to change faster. This matters because a user doesn't want to walk halfway across campus just for there space to become occupied by the time they get there.
 
