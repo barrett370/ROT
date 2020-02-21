@@ -38,6 +38,6 @@ One possible solution would be `Campus Region -> Building -> Floor -> Rooms`, an
 
 # Testing
 
-Whilst our research may show what the users think they want, you cant be sure that it is definitly what they want. To handle this we hope to do a variety of A/B testing of a variety of different layouts. Both in the initial sketeches, put also the interactive prototypes.
+Whilst our research may show what the users think they want, you cant be sure that it is definitely what they want. To handle this we hope to do a variety of A/B testing of a variety of different layouts. Both in the initial sketches, put also the interactive prototypes.
 
-In this testing we hope to observe a number of usability metrics to assess the deisgns. Some examples of these is speed and number of clicks to reach a goal. We will also interview the users to try to figgure out their expereicne with each design. Hopefully using this information we will be able to design a product which puts the users first.
+In this testing we hope to observe a number of usability metrics to assess the designs. Some examples of these is speed and number of clicks to reach a goal. We will also interview the users to try to figure out their experience with each design. Hopefully using this information we will be able to design a product which puts the users first.
