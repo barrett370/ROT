@@ -24,6 +24,9 @@ A gradient of colour could be considered a seamless representation of percentage
 Using a "traffic light" code to indicate occupancy presents information in an already widely understood standard.
 ![Grafana Traffic Light](https://grafana.com/static/img/docs/v45/singlestat-color-options.png)
 
+### Accessibility of colours
+
+Depending on colour does again introduce the accessibility issue and solving this with a different colour pallet has the potential to introduce a new issue whereby users may not understand the relation between colour and occupancy when looking directly at it, let alone in passing.
 
 Simplicity
 Colour issues
