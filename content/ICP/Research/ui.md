@@ -18,7 +18,7 @@ As finding any space is the highest important to students, in our design we have
 
 ## Less Specific Locations
 
-Often students didn't a specific room, they wanted a much wider impression of occupancy across campus. An example of this is students wanted to know what was more busy, the library or the sports center. They often didn't much care about specific rooms but just waned know which buildings are low occupancy. 
+Often students didn't a specific room, they wanted a much wider impression of occupancy across campus. An example of this is students wanted to know what was more busy, the library or the sports center. They often didn't much care about specific rooms but just wanted know which buildings are low occupancy. 
 
 To help communicate this, this information will also be displayed on the main view under the specific rooms. It will show a list of each of the top occupancy for whole locations. This will allow users to know which building is best in general, instead of a specific room. 
 
