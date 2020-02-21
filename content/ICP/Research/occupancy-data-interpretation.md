@@ -13,7 +13,7 @@ Seats left provides the most exact details. This metric is perfect for users who
 
 ## Colour
 
-Colour representations allow you to simplify information to a level where you can simply glance at it to a basic insight.
+Colour representations allow you to simplify information to a level where you can just glance at it to a basic insight.
 
 ### Gradient
 
