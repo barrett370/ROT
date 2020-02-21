@@ -55,3 +55,9 @@ The above approach gives an abstracted view of the "occupancy" however it does n
 Moving away from the more traditional types of graphs, there are heat maps. These represent the data in a way which is easy to interpret to users who are not fully aware of room names as they can see it based on the floor plan. The downside of the heatmap is that if the user just wants to find a space on campus that is free they will have to check through each of the heat maps, as opposed to a table where they can just sort it via occupancy.
 
 ![](/images/uploads/heatmap.png)
+
+## Conclusion
+
+Each design has its pros and cons are serve different use cases. Managment who want to monitor occupany trends would find the graph most useful. 
+
+Students on the other hand looking for a room would find the just list of rooms or heatmap most usefull. A comprismise between the two would be the most useful. For example at the top you list the rooms which have the lowest occupancy and below you show the heatmap. Therefor the data which you are presenting to the user first which is the most important to them is a suggestion of a couple of spaces which are free, and then if they are more picky about location or not aware where the rroms are they can consult the heat map.
