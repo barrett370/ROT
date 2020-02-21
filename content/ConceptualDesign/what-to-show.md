@@ -53,3 +53,7 @@ Alternatively, the heatmap, shown above, provides excellent resolution for displ
 In the sketch above, you can intuitively see that the tall building has the most free space, from here you could look into which specific rooms in that building are free, this more specific data may be presented as a colour coded list or gauge, an example implementation is below: 
 
 ![Next Level Heatmap](/images/uploads/hmid-8.jpg)
+
+We could be yet more granular showing specific seat occupancy for a given room such as in the following sketch: 
+
+![Room Occupancy](/images/uploads/hmroom-9.jpg)
