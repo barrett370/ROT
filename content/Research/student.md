@@ -1,10 +1,12 @@
 ---
-title: Student Survey
+title: 'Survey: Students'
 description: >-
   The students of Universities implementing ROT systems are the major users and
   as such their views should play a pivotal role in the design and
   implementation of such systems.
+weight: 1
 date: 2020-02-20T14:24:39.498Z
+pre: "<b>1.1 </b>"
 ---
  From the interview conducted [here](/assignments/icp/interviews/student) we can see that the current system fails to live up to the expectation of the main user-group, leaving a lot of room for improvement for our service.
 
@@ -12,7 +14,7 @@ date: 2020-02-20T14:24:39.498Z
 
 ![Q1](/images/uploads/SINTQ1.png)
 
-### No 
+### No
 
 #### Why wouldn't you use the current system, if not?
 
@@ -22,7 +24,7 @@ date: 2020-02-20T14:24:39.498Z
 
 ![Q3](/images/uploads/SINTQ3.png)
 
-#### If 'Yes', what is the main reason you no longer use it? 
+#### If 'Yes', what is the main reason you no longer use it?
 
 ![Q4](/images/uploads/SINTQ4.png)
 
@@ -36,11 +38,11 @@ date: 2020-02-20T14:24:39.498Z
 
 ![Q6](/images/uploads/SINTQ6.png)
 
-#### If not, where would you like to see it extended to? 
+#### If not, where would you like to see it extended to?
 
 ![Q7](/images/uploads/SINTQ7.png)
 
-#### Have you ever attempted to use the current system, but found it to be unavailable? 
+#### Have you ever attempted to use the current system, but found it to be unavailable?
 
 ![Q8](/images/uploads/SINTQ8.png)
 

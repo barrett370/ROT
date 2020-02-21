@@ -1,11 +1,12 @@
 ---
-title: Office
+title: 'Focus Group: Office workers'
 description: >-
-  This interview was conducted with a worker from a local business based in
-  Birmingham.
-date: 2020-02-17T15:39:34.514Z
+  This focus group was targeted at staff from a large firm that made use of hot desking throughout a multistory building.
+weight: 5
+pre: "<b>1.5 </b>"
 ---
-## Do you have a system for tracking free space?
+
+#### Do you have a system for tracking free space?
 Currently no, the system at present is:
 
 
@@ -18,40 +19,40 @@ Currently no, the system at present is:
 * Currently there is a 'manager' for each breakout space you can ask what is available including what types space / desks
 
 
-## What detail about availability would be useful to you as a user?
+#### What detail about availability would be useful to you as a user?
 
 It would useful to know how busy each floor or area is since that would save you time in searching each area.
 
-## What would be a dealbreaker when using our solution?
+#### What would be a dealbreaker when using our solution?
 
 If it became a significant portion of time that I had to stop for in the morning then I'd probably just resort to walking around.
 
-## Are you likely to use the same desk all day?
+#### Are you likely to use the same desk all day?
 
 Some employees would probably use the same desk all day whereas I would likely use it for a few hours and then go out of the office for meetings.
 Some people would take a desk and then go into meetings for an hour while leaving their stuff at the desk.
 
-## Would you be willing to "sign in" to a desk to mark it as taken?
+#### Would you be willing to "sign in" to a desk to mark it as taken?
 
 This sounds okay as long as people can't reserve desks for hours - I'd still want to be able to just walk up to an empty desk and "check in".
 
-## How long should people be able to book a desk for?
+#### How long should people be able to book a desk for?
 
 Our study booths are only meant to be used for 2 hours at a time and we currently have no way of tracking them.
 Meeting rooms are effectively the same thing but these must be booked by name. If you haven't signed into the room in the first 15 minutes of the booking then it should be reopened for booking.
 
-## Who should be able to book a desk? 
+#### Who should be able to book a desk?
 
 It would be good for temporary contractors to be able to book space while they are there.
 
 When booking a client room you have to provide a charge code (internal charge for services provided) so this adds control to who can book the room, since they will need the budget.
- 
-## How accurately would you like to be able to see available space?
+
+#### How accurately would you like to be able to see available space?
 
 Knowing exactly what desks are free would be very useful.
 
-## Would it be useful for other people in the office to know where you are
+#### Would it be useful for other people in the office to know where you are
 Yes, since it would enable you to book near people in your team or book a set of desks together.
 
-## Would you always want your location accessible?
+#### Would you always want your location accessible?
 It would be useful to have a 'do not disturb' setting if you wanted to work alone.
