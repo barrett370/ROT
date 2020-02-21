@@ -4,10 +4,10 @@ weight: 2
 pre: '<b>1.2 </b>'
 description: >-
   These interviews were conducted with a varied group of students both familiar
-  and unfamiliar with Internet of Things devices (Alexa, Apple Watches, Google Home 
+  and unfamiliar with Internet of Things devices (Alexa, Apple Watches, Google Home
   etc) who attend the University of Birmingham.
 ---
-## Are you familiar with the current room occupancy system the University implements?
+#### Are you familiar with the current room occupancy system the University implements?
 
 Student A: Yes, I've used a library room booking system as well as to check general availability in the Library during study periods.
 
@@ -23,7 +23,7 @@ Student F: It's pretty useless for finding a seat - it only says the percentage 
 
 Student G: Yeah I usually check it before I go to the Barnes library - it's not always right but can be a good general indicator.
 
-## What similar systems have you used before?
+#### What similar systems have you used before?
 
 Student A: I interned during the summer at a Tech company which utilised room occupancy to track free space to work and organise meetings.
 
@@ -39,7 +39,7 @@ Student F: Does a cinema seat booking service count? That's obviously something 
 
 Student G: You can book tables at my local library for group study sessions.
 
-## What did you think of them?
+#### What did you think of them?
 
 Student A: It was really handy for organising meetings with my supervisor and just finding some free space.
 
@@ -55,7 +55,7 @@ Student F: It's pretty essential for the service - but thinking about it, it wou
 
 Student G: It's handy when available but usually they're booked many weeks in advance.
 
-## Would mobile or web integration be important to you, in such a product?
+#### Would mobile or web integration be important to you, in such a product?
 
 Student A: Absolutely - any sort of web or mobile app integration for study space on campus would be incredibly useful and accessible.
 
@@ -71,9 +71,9 @@ Student F: Yeah I would really like that idea.
 
 Student G: If it was reliable. Most mobile apps aren't.
 
-## What ethical concerns do you have about 'Internet of Things' devices that you interact with everyday?
+#### What ethical concerns do you have about 'Internet of Things' devices that you interact with everyday?
 
-Student A: It has become a bit of a joke online - how Google or Amazon's suggestions can mirror your thoughts 
+Student A: It has become a bit of a joke online - how Google or Amazon's suggestions can mirror your thoughts
 and with assistant products like the Google Home listening to you constantly - I got rid of my assistant for this reason - privacy is essential.
 
 Student B: I don't really care as long as my personal information isn't being sold and mined by companies outside of what I gave it away for.
@@ -82,14 +82,14 @@ Student C: I saw that thing about Huawei in the news - something about tracking 
 
 Student D: I don't use any IoT devices.
 
-Student E: I try and keep my privacy to the maximum - I've switched from Whatsapp to telegram for encrypted communications etc. I am quite concerned with the directions we are 
+Student E: I try and keep my privacy to the maximum - I've switched from Whatsapp to telegram for encrypted communications etc. I am quite concerned with the directions we are
 going with digital assistants.
 
 Student F: I'm really not that fussed - I don't have anything to hide. I love Siri and use it daily.
 
 Student G: As long as they don't store my personal stuff then I'm okay with it.
 
-## Would sensors for room occupancy tracking concern you?
+#### Would sensors for room occupancy tracking concern you?
 
 Student A: As long as it isn't extended to be used to track specific people then it seems okay.
 
@@ -105,7 +105,7 @@ Student F: No
 
 Student G: Yeah - if they were taking loads of photos I wouldn't really like to go there - I look like trash in the library!
 
-## What features would our product have to have in order for you to use it over current solutions or just not checking availability?
+#### What features would our product have to have in order for you to use it over current solutions or just not checking availability?
 
 Student A: As the main point of use for the product would be in order to save my time, it would have to give me results quickly and accurately.
 
@@ -121,8 +121,7 @@ Student F: If it does what you're describing - it sounds fine as is.
 
 Student G: Maybe a way to share a specific spot with friends when making study plans?
 
-
-## Do you see yourself using this product, should it be implemented in University?
+#### Do you see yourself using this product, should it be implemented in University?
 
 Student A: Absolutely. I would use it daily during exam season.
 
@@ -138,6 +137,6 @@ Student F: Yeah definitely - something like that I would use more than Canvas.
 
 Student G: If it worked well - yeah!
 
-# Analysis
+### Analysis
 
 These interviews demonstrate how aware current students are of data privacy - how the intended solution should be sleek, unintrusive and accessible - preferably via the web or mobile apps. The results should be accurate in relative real-time and also be fast as the basis for the product is to save time and improve efficiency. We also managed to canvas some ideas for the solution and reinforce some of our own previous ideas - multiple students seemed enthusiastic about push notifications for availability and metrics for availibility prediction - these could be promising not only for University environments, but also corporate statistics. For example, examining foottraffic in supermarkets and analysing to predict where to put the biggest money making products.
