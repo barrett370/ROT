@@ -2,7 +2,7 @@
 title: User Interface
 description: A look into the design of user interfaces
 ---
-## Introduction
+1. ## Introduction
 
 The user interface is of extreme importance to this project, as it is the portal to which the user will actually experience the product. A user interface is make or break when it comes to a users interactions and impressions of your project. If the data is there but it is tedious to access and presented in ways which are not intuitive and easy to read then people will not want to use your project. An example of this is the universities timetabling system, a system so bad users are happy to hand over their login details to a random party just so they can get out of using it.
 
@@ -46,6 +46,12 @@ The most simplest of the methods would be a purely text based method which lists
 
 This can be expanded if you want to represent the status over time as can be seen below:
 
-
-
 ![](/images/uploads/reddit2.PNG)
+
+The above approach gives an abstracted view of the "occupancy" however it does not provide greater details. If this is needed then a graph like the one below. This graph gives you exact details and it is easy to spot the trend. However it does take up a lot of screen real estate. 
+
+![](/images/uploads/graphana.PNG)
+
+Moving away from the more traditional types of graphs, there are heat maps. These represent the data in a way which is easy to interpret to users who are not fully aware of room names as they can see it based on the floor plan. The downside of the heatmap is that if the user just wants to find a space on campus that is free they will have to check through each of the heat maps, as opposed to a table where they can just sort it via occupancy.
+
+![](/images/uploads/heatmap.png)
