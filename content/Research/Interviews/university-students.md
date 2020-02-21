@@ -64,7 +64,11 @@ S3: Yeah definitely - I'm always on my phone.
 
 S4: If there were features such as setting push notifications for when space becomes available then it would be excellent.
 
-S5: 
+S5: Not really, I don't use my phone much - especially during my study time.
+
+S6: Yeah I would really like that idea.
+
+S7: If it was reliable. Most mobile apps aren't.
 
 ## What ethical concerns do you have about 'Internet of Things' devices that you interact with everyday?
 
@@ -73,11 +77,32 @@ and with assistant products like the Google Home listening to you constantly - I
 
 S2: I don't really care as long as my personal information isn't being sold and mined by companies outside of what I gave it away for.
 
+S3: I saw that thing about Huawei in the news - something about tracking all your data on your phone. That's why I have an iPhone.
+
+S4: I don't use any IoT devices.
+
+S5: I try and keep my privacy to the maximum - I've switched from Whatsapp to telegram for encrypted communications etc. I am quite concerned with the directions we are 
+going with digital assistants.
+
+S6: I'm really not that fussed - I don't have anything to hide. I love Siri and use it daily.
+
+S7: As long as they don't store my personal stuff then I'm okay with it.
+
 ## Would sensors for room occupancy tracking concern you?
 
 S1: As long as it isn't extended to be used to track specific people then it seems okay.
 
 S2: No not really - the concept doesn't seem as intrusive as CCTV and it stores no personal tracking information.
+
+S3: Not at all.
+
+S4: I would prefer not to be tracked but as long as it can't be used to identify people then it's fine.
+
+S5: Not really - I would be concerned with cameras.
+
+S6: No
+
+S7: Yeah - if they were taking loads of photos I wouldn't really like to go there - I look like trash in the library!
 
 ## What features would our product have to have in order for you to use it over current solutions or just not checking availability?
 
@@ -85,11 +110,32 @@ S1: As the main point of use for the product would be in order to save my time, 
 
 S2: As long as it's not slow and is easy to access, I would use this device.
 
+S3: Maybe predictions for when's best to go to the library?
+
+S4: As long as it's fast I would use it.
+
+S5: Notifications - I don't wanna be checking every 10 minutes.
+
+S6: If it does what you're describing - it sounds fine as is.
+
+S7: Maybe a way to share a specific spot with friends when making study plans?
+
+
 ## Do you see yourself using this product, should it be implemented in University?
 
 S1: Absolutely. I would use it daily during exam season.
 
 S2: If I am finding it difficult to find a place to work then yes.
+
+S3: 100%
+
+S4: I don't think it would be that useful currently for myself as I work in labs - but for other students I think it would be a good idea.
+
+S5: Yes I would - I'm constantly in the library in exam season and spend a lot of time finding a seat, maybe this would make it harder if everyone knows where the free seats are however.
+
+S6: Yeah definitely - something like that I would use more than Canvas.
+
+S7: If it worked well - yeah!
 
 # Analysis
 
