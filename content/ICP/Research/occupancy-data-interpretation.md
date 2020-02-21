@@ -31,6 +31,6 @@ Depending on colour does again introduce the accessibility issue and solving thi
 
 Simplicity
 Colour issues
-Differnet types of colour
+Different types of colour
 
 Seen at a glance, not very detailed
