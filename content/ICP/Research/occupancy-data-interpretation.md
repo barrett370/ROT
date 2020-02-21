@@ -18,6 +18,7 @@ Colour representations allow you to simplify information to a level where you ca
 ### Gradient
 
 A gradient of colour could be considered a seamless representation of percentage occupancy and could be applied to still provide an interpretation that can be processed from just entering the peripheral view.
+![Grafana Gradient](https://grafana.com/static/assets/img/blog/bargauge/gradient.jpg)
 
 ### Traffic Light
 
