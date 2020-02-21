@@ -2,7 +2,7 @@
 title: User Interface
 description: A look into the design of user interfaces
 ---
-1. ## Introduction
+## Introduction
 
 The user interface is of extreme importance to this project, as it is the portal to which the user will actually experience the product. A user interface is make or break when it comes to a users interactions and impressions of your project. If the data is there but it is tedious to access and presented in ways which are not intuitive and easy to read then people will not want to use your project. An example of this is the universities timetabling system, a system so bad users are happy to hand over their login details to a random party just so they can get out of using it.
 
