@@ -9,3 +9,8 @@ themeVariant = "red"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-bullhorn'></i> Progress"
+url = "/progress"
+weight = 30
