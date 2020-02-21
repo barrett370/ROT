@@ -1,9 +1,11 @@
 ---
-title: Developer
+title: 'Interview: Developer'
 description: >-
   This interview was conducted with a software developer who has experience
   developing on top of a range of IoT devices.
 date: 2020-02-20T00:00:00.000Z
+weight: 4
+pre: "<b>1.4 </b>"
 ---
 ### Introduction
 

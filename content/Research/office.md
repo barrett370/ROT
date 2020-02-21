@@ -1,10 +1,12 @@
 ---
-title: Office
+title: 'Focus Group: Office workers'
 description: >-
-  This interview was conducted with a worker from a local business based in
-  Birmingham.
+  This focus group was targeted at staff from a large firm that made use of hot desking throughout a multistory building.
 date: 2020-02-17T15:39:34.514Z
+weight: 5
+pre: "<b>1.5 </b>"
 ---
+
 ## Do you have a system for tracking free space?
 Currently no, the system at present is:
 
