@@ -58,6 +58,8 @@ Moving away from the more traditional types of graphs, there are heat maps. Thes
 
 ## Conclusion
 
-Each design has its pros and cons are serve different use cases. Managment who want to monitor occupany trends would find the graph most useful. 
+Each design has its pros and cons are serve different use cases. Management who want to monitor occupancy trends would find the graph most useful. 
 
-Students on the other hand looking for a room would find the just list of rooms or heatmap most usefull. A comprismise between the two would be the most useful. For example at the top you list the rooms which have the lowest occupancy and below you show the heatmap. Therefor the data which you are presenting to the user first which is the most important to them is a suggestion of a couple of spaces which are free, and then if they are more picky about location or not aware where the rroms are they can consult the heat map.
+Students on the other hand looking for a room would find the just list of rooms or heatmap most useful. A compromise between the two would be the most useful. For example at the top you list the rooms which have the lowest occupancy and below you show the heatmap. Therefor the data which you are presenting to the user first which is the most important to them is a suggestion of a couple of spaces which are free, and then if they are more picky about location or not aware where the rooms are they can consult the heat map.
+
+![](/images/uploads/phone.png)
