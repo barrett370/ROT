@@ -1,8 +1,8 @@
 ---
 title: UI Layout
 description: An in-depth look into layout
-weight: 7
-pre: "<b>1.7 </b>"
+weight: 8
+pre: "<b>1.8 </b>"
 ---
 ### Introduction
 

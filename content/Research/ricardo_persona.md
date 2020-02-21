@@ -1,8 +1,8 @@
 ---
 title: 'Persona: Ricardo'
 description: Ricardo is a Computer Science Student who needs lab machines for assignments
-weight: 6
-pre: "<b>1.6 </b>"
+weight: 7
+pre: "<b>1.7 </b>"
 ---
 |   |   |
 |---|---|

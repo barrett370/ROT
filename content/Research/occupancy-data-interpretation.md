@@ -1,8 +1,8 @@
 ---
 title: Occupancy Data Interpretation
 description: A look into representing occupancy
-weight: 8
-pre: "<b>1.8 </b>"
+weight: 9
+pre: "<b>1.9 </b>"
 ---
 #### Percentage %
 
