@@ -45,7 +45,7 @@ func watch_sensors(influx *influxdb.Client) {
 	if err != nil {
 		fmt.Println("ERROR", err)
 	}
-	defer watcher.Close()
+	//defer watcher.Close()
 
 	//
 	done := make(chan bool)
@@ -61,14 +61,19 @@ func watch_sensors(influx *influxdb.Client) {
 				if err != nil {
 					log.Fatal(err)
 				}
-				defer readings.Close()
+				//defer readings.Close()
 				var report SensorReport
 				fileBytes, err := ioutil.ReadAll(readings)
+				readings.Close()
 				if err != nil {
 					log.Fatal(err)
 				}
 				json.Unmarshal(fileBytes, &report)
 				fmt.Printf("%+v\n", report)
+				if report.CO2 == 0 && report.Temperature == 0 {
+					println("Ignoring 0 valued struct")
+					break
+				}
 				myMetric := []influxdb.Metric{
 					influxdb.NewRowMetric(
 						map[string]interface{}{"CO2": report.CO2, "temperature": report.Temperature},
@@ -80,6 +85,7 @@ func watch_sensors(influx *influxdb.Client) {
 				if err != nil {
 					log.Fatal(err) // as above use your own error handling here.
 				}
+				watcher.Close()
 				watch_sensors(influx)
 				// watch for errors
 			case err := <-watcher.Errors:
