@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Router, ActivatedRoute,  ParamMap } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 import { Identifiers } from '@angular/compiler';
 
@@ -11,14 +11,17 @@ import { Identifiers } from '@angular/compiler';
 export class LocationComponent implements OnInit {
 
   public id: string;
-  constructor(
-    private route: ActivatedRoute,
-    private router: Router
-  ) {}
+  constructor(route: ActivatedRoute) {
+    route.params.subscribe(val => {
+      // put the code from `ngOnInit` here
+      this.id = val.id;
+      console.log(val);
+    });
+  }
+  public topLoc  = [{name: 'Library', percent: 15}, {name: 'CS', percent: 20}, {name: 'Guild of Students', percent: 25}];
 
   ngOnInit() {
-    this.id = this.route.snapshot.paramMap.get('id');
-    console.log(this.id);
+
   }
 
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-top-locations',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopLocationsComponent implements OnInit {
 
+
+  
   constructor() { }
   public topLoc  = [{name: 'Library', percent: 15}, {name: 'CS', percent: 20}, {name: 'Guild of Students', percent: 25}];
   ngOnInit(): void {

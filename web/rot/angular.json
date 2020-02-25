@@ -26,7 +26,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": ["src/assets/assets/js/raphael-2.1.4.min.js","src/assets/assets/js/justgage.js"]
+            "scripts": ["src/assets/assets/js/raphael-2.1.4.min.js","src/assets/assets/js/justgage.js",
+            "src/assets/assets/js/jquery-3.4.1.min.js","src/assets/assets/js/bootstrap.js"]
           },
           "configurations": {
             "production": {

@@ -2,6 +2,20 @@
     <h1 style="margin: 15px;font-size: 20px;">{{id}}<span class="badge badge-pill badge-success text-center d-flex float-right">16%</span></h1>
     <div class="card-group">
     <div class="card">
+        <ul class="list-group">
+            <ng-container *ngFor="let item of topLoc; index as i;"> 
+            <a  class="list-group-item " data-toggle="collapse" href="{{'#collapseUpcommingItem'+i}}"
+            role="button" aria-expanded="true" [attr.aria-controls]="'collapseUpcommingItem'+i">
+                <span>{{item.name}}</span><span class="badge badge-pill badge-success text-center d-flex float-right">{{item.percent}}%</span></a>
+            <div class="collapse" id="{{'collapseUpcommingItem'+i}}">
+                <ul class="list-group">
+                <a routerLink="/location/{{item.name}}" routerLinkActive="active" class="list-group-item" *ngFor="let item of topLoc; index as i;" ><span> 	&nbsp;	&nbsp;	&nbsp;   {{item.name}}</span><span class="badge badge-pill badge-success text-center d-flex float-right">{{item.percent}}%</span></a>
+                    </ul>
+                </div>
+        </ng-container>
+        </ul>
+    </div>    
+    <div class="card">
         <div class="card-body">
             <h6 class="text-muted card-subtitle mb-2">Current Occupancy</h6>
             <p class="card-text"></p>
@@ -15,3 +29,4 @@
         <app-top-rooms></app-top-rooms>
     </div>
 </div>
+
