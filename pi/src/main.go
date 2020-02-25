@@ -10,28 +10,26 @@ import (
 	"os"
 	"time"
 
-	fsnotify "github.com/fsnotify/fsnotify"
-	influxdb "github.com/influxdata/influxdb-client-go"
+	"github.com/fsnotify/fsnotify"
+	"github.com/influxdata/influxdb-client-go"
 )
 
 var INFLUX_TOKEN string
-
-func DBConnect() (*influxdb.Client, error) {
-	// You can generate a Token from the "Tokens Tab" in the UI
-	client := http.Client{}
-	return influxdb.New("https://us-central1-1.gcp.cloud2.influxdata.com", INFLUX_TOKEN, influxdb.WithHTTPClient(&client))
-}
 
 type SensorReport struct {
 	CO2         float64 `json:"CO2"`
 	Temperature float64 `json:"Temperature"`
 }
 
+func DBConnect(InfluxToken string) (*influxdb.Client, error) {
+	// You can generate a Token from the "Tokens Tab" in the UI
+	client := http.Client{}
+	return influxdb.New("https://us-central1-1.gcp.cloud2.influxdata.com", InfluxToken, influxdb.WithHTTPClient(&client))
+}
 func main() {
-	DBConnect()
 	// we use client.NewRowMetric for the example because it's easy, but if you need extra performance
 	// it is fine to manually build the []client.Metric{}.
-	influx, err := DBConnect()
+	influx, err := DBConnect(INFLUX_TOKEN)
 	if err != nil {
 		panic(err)
 	}
