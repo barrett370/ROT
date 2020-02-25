@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"html"
 	"log"
@@ -12,12 +13,16 @@ import (
 	"github.com/influxdata/influxdb-client-go"
 )
 
+// DB encapsulates the database connection so that it might be shared between response handlers
 type DB struct {
 	Client *influxdb.Client
 }
 
-var INFLUX_TOKEN string
+//InfluxToken is injected at compile-time and authorises access to the Influx Database
+var InfluxToken string
 
+// NewDB creates a DB struct which abstracts the InfluxDB connection,
+// allowing for http response methods to share the same connection
 func NewDB(token string) DB {
 	client := http.Client{}
 	iDBClient, err := influxdb.New("https://us-central1-1.gcp.cloud2.influxdata.com", token, influxdb.WithHTTPClient(&client))
@@ -27,7 +32,7 @@ func NewDB(token string) DB {
 	return DB{Client: iDBClient}
 }
 func main() {
-	db := NewDB(INFLUX_TOKEN)
+	db := NewDB(InfluxToken)
 	router := mux.NewRouter().StrictSlash(true)
 
 	router.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
@@ -42,10 +47,16 @@ func main() {
 	log.Fatal(http.ListenAndServe(":6969", router))
 }
 
+// SensorData allows for important information from InfluxDB query responses to be accessed structurally
 type SensorData struct {
 	Time  time.Time `flux:"_time" json:"time"`
 	Field string    `flux:"_field" json:"field"`
 	Value float64   `flux:"_value" json:"value"`
+}
+
+// Response stores data to be returned to frontend via json encoding
+type Response struct {
+	Occupancy float64 `json:"occupancy"`
 }
 
 func (db *DB) calcOccupancy(w http.ResponseWriter, r *http.Request) {
@@ -56,32 +67,23 @@ func (db *DB) calcOccupancy(w http.ResponseWriter, r *http.Request) {
   |> range(start: %s)
   |> filter(fn: (r) => r.ID == "%s")
   |> last()`, "-5m", zoneID)
-	log.Printf("Execting query %s\n", q)
 	resp, err := db.Client.QueryCSV(context.Background(), q, "833c7fbc1d19c9be")
 	if err != nil {
 		log.Fatal(err)
 	}
 	log.Println("Executed query")
-	// readings := make([]SensorData, 0)
-	var occupancies []float64
+	var response Response
 	readings := SensorData{}
-	for resp.Next() {
+	if !resp.Next() {
+		log.Fatal("ERROR: no data in database")
+	} else {
 		err = resp.Unmarshal(&readings)
 		if err != nil {
 			log.Fatal(err)
 		}
-		// fmt.Printf("%v\n", readings)
-		occupancies = append(occupancies, readings.Value)
+		response = Response{Occupancy: readings.Value}
 	}
-	fmt.Printf("%v", occupancies)
-	avg := func(xs []float64) float64 {
-		sum := 0.0
-		for _, each := range xs {
-			sum += each
-		}
-		log.Printf("total sum: %f", sum)
-		return sum / float64(len(xs))
-	}
-	log.Printf("%f\n", avg(occupancies))
-	fmt.Fprintf(w, `{"occupancy" : %f}`, occupancies[0])
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusCreated)
+	json.NewEncoder(w).Encode(response)
 }
