@@ -2,14 +2,14 @@ include .env
 
 .PHONY: build-server
 build-server:
-	@cd server && go build -ldflags "-X main.InfluxToken=${INFLUX_READ_TOKEN}" -o server && mv ./server ../bin
+	@cd server && go build -ldflags "-X main.InfluxToken=${INFLUX_READ_TOKEN}" -o ../bin/server 
 	@echo "\033[0;32m SUCCESS Compiled server binary \033[0m"
 
 .PHONY: server
 server: 
 	@make build-server 
 	@echo "\033[0;32m Running server \033[0m"
-	@cd ./bin && ./server
+	@./bin/server
 
 .PHONY: deps
 deps:
