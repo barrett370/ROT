@@ -6,3 +6,7 @@ build-server:
 server: 
 	make build-server && cd ./bin && ./server
 
+.PHONY: deps
+deps:
+	cd ./server && go mod download 
+	cd ./web/rot && sudo npm i 
