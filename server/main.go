@@ -75,7 +75,7 @@ func (db *DB) calcOccupancy(w http.ResponseWriter, r *http.Request) {
 	var response Response
 	readings := SensorData{}
 	if !resp.Next() {
-		log.Fatal("ERROR: no data in database")
+		log.Fatal("ERROR: no data in database") // todo check if this is desired
 	} else {
 		err = resp.Unmarshal(&readings)
 		if err != nil {

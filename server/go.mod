@@ -1,4 +1,4 @@
-module github.com/barrett370/ROT
+module github.com/barrett370/ROT/server
 
 go 1.13
 
