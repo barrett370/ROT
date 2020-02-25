@@ -1,4 +1,6 @@
 include .env
+
+.PHONY: build-server
 build-server:
 	@cd server && go build -ldflags "-X main.InfluxToken=${INFLUX_READ_TOKEN}" -o server && mv ./server ../bin
 	@echo "\033[0;32m SUCCESS Compiled server binary \033[0m"
