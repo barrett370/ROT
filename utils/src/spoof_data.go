@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"sort"
 	"time"
+
 	"github.com/influxdata/influxdb-client-go"
 )
 
@@ -76,6 +77,7 @@ func (g *Generator) Random() float64 {
 	})
 	return g.values[i]
 }
+
 var INFLUX_TOKEN string
 
 type SensorReport struct {
@@ -98,7 +100,7 @@ func main() {
 	}
 	//source := rand.NewSource(10)
 	// rand := rand.New(source)
-	rand, err  := NewGenerator(10, []float64{-1.0, 0.0, 1.0}, []float64{0.25, 0.5, 0.25})
+	rand, err := NewGenerator(10, []float64{-1.0, 0.0, 1.0}, []float64{0.25, 0.5, 0.25})
 	spoof_data(influx, *rand, 100, 10)
 	// The actual write..., this method can be called concurrently.
 }
@@ -110,14 +112,13 @@ func spoof_data(influx *influxdb.Client, r Generator, repeats int, prev_occ floa
 	//	Temperature: float64(r.Intn(30-12+1) + 12),
 	//}
 
-
 	//fmt.Printf("%v\n", report)
 
 	occupancy := prev_occ + r.Random()
-	fmt.Printf("%f",occupancy)
+	fmt.Printf("%f", occupancy)
 	myMetric := []influxdb.Metric{
 		influxdb.NewRowMetric(
-			map[string]interface{}{"occupancy":occupancy},
+			map[string]interface{}{"occupancy": occupancy},
 			"Sensor Readings",
 			map[string]string{"Hostname": "TestBox1", "ID": "001"},
 			time.Now()),
