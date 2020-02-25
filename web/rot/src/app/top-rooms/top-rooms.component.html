@@ -1,0 +1,6 @@
+<div class="card-body">
+    <h1 style="margin: 15px;font-size: 20px;">Top Places<i class="fa fa-search float-right"></i></h1>
+    <ul class="list-group">
+        <a routerLink="/location/c" routerLinkActive="active" class="list-group-item" *ngFor="let item of topLoc; index as i;" ><span>{{item.name}}</span><span class="badge badge-pill badge-success text-center d-flex float-right">{{item.percent}}%</span></a>
+    </ul>
+</div>
