@@ -138,7 +138,7 @@ func (db *DB) calcOccupancy(w http.ResponseWriter, r *http.Request) {
 		response = Response{Occupancy: readings[0].Value}
 	}
 
-	fmt.Printf("%v\n", readings)
+	fmt.Printf("%+v\n", response)
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusCreated)
 	json.NewEncoder(w).Encode(response)
