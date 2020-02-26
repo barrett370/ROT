@@ -39,9 +39,6 @@ func main() {
 		fmt.Fprintf(w, "You have reached the toplevel of the RoT-IoT internal web server, the following endpoints are available: %q", html.EscapeString(r.URL.Path))
 	})
 
-	// router.HandleFunc("/occupancy/", func(w http.ResponseWriter, r *http.Request) {
-	// 	fmt.Fprintf(w, "Please specify a zone ID: %q", html.EscapeString(r.URL.Path))
-	// })
 	router.HandleFunc("/occupancy/", db.calcOccupancy)
 
 	log.Fatal(http.ListenAndServe(":6969", router))
@@ -65,7 +62,6 @@ type ErrorResponse struct {
 
 func (db *DB) calcOccupancy(w http.ResponseWriter, r *http.Request) {
 	log.Println("Calculating Occupancy")
-	// vars := mux.Vars(r)
 	vars := r.URL.Query()
 	var (
 		buildingID string
@@ -121,9 +117,6 @@ func (db *DB) calcOccupancy(w http.ResponseWriter, r *http.Request) {
 	log.Println("Executed query")
 	var response Response
 	readings := make([]SensorData, 0)
-	// if !resp.Next() {
-	// 	log.Fatal("ERROR: no data in database") // todo check if this is desired
-	// } else {
 	for resp.Next() {
 		println("READING")
 		reading := SensorData{}
@@ -144,7 +137,6 @@ func (db *DB) calcOccupancy(w http.ResponseWriter, r *http.Request) {
 	} else {
 		response = Response{Occupancy: readings[0].Value}
 	}
-	// }
 
 	fmt.Printf("%v\n", readings)
 	w.Header().Set("Content-Type", "application/json")
