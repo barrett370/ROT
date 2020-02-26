@@ -95,17 +95,17 @@ func (db *DB) calcOccupancy(w http.ResponseWriter, r *http.Request) {
 		q = fmt.Sprintf(`from(bucket: "my-test-bucket")
   |> range(start: %s)
   |> filter(fn: (r) => r.BuildingID == "%s")
-  |> last()`, "-5m", buildingID)
+  |> last()`, "-30d", buildingID)
 	} else if floorID != "" {
 		q = fmt.Sprintf(`from(bucket: "my-test-bucket")
   |> range(start: %s)
   |> filter(fn: (r) => r.FloorID == "%s")
-  |> last()`, "-5m", floorID)
+  |> last()`, "-30d", floorID)
 	} else if roomID != "" {
 		q = fmt.Sprintf(`from(bucket: "my-test-bucket")
   |> range(start: %s)
   |> filter(fn: (r) => r.RoomID == "%s")
-  |> last()`, "-5m", roomID)
+  |> last()`, "-30d", roomID)
 	} else {
 		response := ErrorResponse{Response: "must provide a building, floor or room ID"}
 		w.Header().Set("Content-Type", "application/json")
