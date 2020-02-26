@@ -1,4 +1,6 @@
 .vscode/
 .idea/
 themes/
+.env
+bin/
 node_modules/
