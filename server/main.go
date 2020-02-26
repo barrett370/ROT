@@ -39,10 +39,10 @@ func main() {
 		fmt.Fprintf(w, "You have reached the toplevel of the RoT-IoT internal web server, the following endpoints are available: %q", html.EscapeString(r.URL.Path))
 	})
 
-	router.HandleFunc("/occupancy/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Please specify a zone ID: %q", html.EscapeString(r.URL.Path))
-	})
-	router.HandleFunc("/occupancy/{zoneId}", db.calcOccupancy)
+	// router.HandleFunc("/occupancy/", func(w http.ResponseWriter, r *http.Request) {
+	// 	fmt.Fprintf(w, "Please specify a zone ID: %q", html.EscapeString(r.URL.Path))
+	// })
+	router.HandleFunc("/occupancy/", db.calcOccupancy)
 
 	log.Fatal(http.ListenAndServe(":6969", router))
 }
@@ -59,30 +59,94 @@ type Response struct {
 	Occupancy float64 `json:"occupancy"`
 }
 
+type ErrorResponse struct {
+	Response string `json: response`
+}
+
 func (db *DB) calcOccupancy(w http.ResponseWriter, r *http.Request) {
 	log.Println("Calculating Occupancy")
-	vars := mux.Vars(r)
-	zoneID := vars["zoneId"]
-	q := fmt.Sprintf(`from(bucket: "my-test-bucket")
+	// vars := mux.Vars(r)
+	vars := r.URL.Query()
+	var (
+		buildingID string
+		floorID    string
+		roomID     string
+	)
+	buildingIDs := vars["buildingID"]
+	if len(buildingIDs) != 0 {
+		buildingID = buildingIDs[0]
+	} else {
+		buildingID = ""
+	}
+	floorIDs := vars["floorID"]
+	if len(floorIDs) != 0 {
+		floorID = floorIDs[0]
+	} else {
+		floorID = ""
+	}
+	roomIDs := vars["roomID"]
+	if len(roomIDs) != 0 {
+		roomID = roomIDs[0]
+	} else {
+		roomID = ""
+	}
+	var q string
+	if buildingID != "" {
+		q = fmt.Sprintf(`from(bucket: "my-test-bucket")
   |> range(start: %s)
-  |> filter(fn: (r) => r.ID == "%s")
-  |> last()`, "-5m", zoneID)
+  |> filter(fn: (r) => r.BuildingID == "%s")
+  |> last()`, "-5m", buildingID)
+	} else if floorID != "" {
+		q = fmt.Sprintf(`from(bucket: "my-test-bucket")
+  |> range(start: %s)
+  |> filter(fn: (r) => r.FloorID == "%s")
+  |> last()`, "-5m", floorID)
+	} else if roomID != "" {
+		q = fmt.Sprintf(`from(bucket: "my-test-bucket")
+  |> range(start: %s)
+  |> filter(fn: (r) => r.RoomID == "%s")
+  |> last()`, "-5m", roomID)
+	} else {
+		response := ErrorResponse{Response: "must provide a building, floor or room ID"}
+		w.Header().Set("Content-Type", "application/json")
+		w.WriteHeader(http.StatusCreated)
+		json.NewEncoder(w).Encode(response)
+		return
+	}
+	println(q)
 	resp, err := db.Client.QueryCSV(context.Background(), q, "833c7fbc1d19c9be")
 	if err != nil {
 		log.Fatal(err)
 	}
 	log.Println("Executed query")
 	var response Response
-	readings := SensorData{}
-	if !resp.Next() {
-		log.Fatal("ERROR: no data in database") // todo check if this is desired
-	} else {
-		err = resp.Unmarshal(&readings)
+	readings := make([]SensorData, 0)
+	// if !resp.Next() {
+	// 	log.Fatal("ERROR: no data in database") // todo check if this is desired
+	// } else {
+	for resp.Next() {
+		println("READING")
+		reading := SensorData{}
+		err = resp.Unmarshal(&reading)
 		if err != nil {
 			log.Fatal(err)
 		}
-		response = Response{Occupancy: readings.Value}
+		readings = append(readings, reading)
 	}
+	if len(readings) == 0 {
+		log.Fatal("ERROR: no data in database") // todo check if this is desired
+	} else if len(readings) > 1 {
+		sumOcc := 0.0
+		for _, each := range readings {
+			sumOcc += each.Value
+			response = Response{Occupancy: sumOcc}
+		}
+	} else {
+		response = Response{Occupancy: readings[0].Value}
+	}
+	// }
+
+	fmt.Printf("%v\n", readings)
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusCreated)
 	json.NewEncoder(w).Encode(response)

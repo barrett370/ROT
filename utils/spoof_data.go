@@ -2,11 +2,13 @@ package main
 
 import (
 	"context"
+	"flag"
 	"fmt"
 	"log"
 	"math/rand"
 	"net/http"
 	"sort"
+	"strconv"
 	"time"
 
 	"github.com/influxdata/influxdb-client-go"
@@ -79,6 +81,9 @@ func (g *Generator) Random() float64 {
 }
 
 var INFLUX_TOKEN string
+var buildingID int
+var floorID int
+var roomID int
 
 type SensorReport struct {
 	CO2         float64 `json:"CO2"`
@@ -94,6 +99,14 @@ func DBConnect(InfluxToken string) (*influxdb.Client, error) {
 func main() {
 	// we use client.NewRowMetric for the example because it's easy, but if you need extra performance
 	// it is fine to manually build the []client.Metric{}.
+	flag.IntVar(&buildingID, "b", -1, "Building ID")
+	flag.IntVar(&floorID, "f", -1, "Floor ID")
+	flag.IntVar(&roomID, "r", -1, "Room ID")
+
+	flag.Parse()
+	if buildingID == -1 || floorID == -1 || roomID == -1 {
+		log.Fatal("Please enter valid building, floor and room ids")
+	}
 	influx, err := DBConnect(INFLUX_TOKEN)
 	if err != nil {
 		panic(err)
@@ -113,16 +126,17 @@ func spoof_data(influx *influxdb.Client, r Generator, repeats int, prev_occ floa
 	//}
 
 	//fmt.Printf("%v\n", report)
-
+	fmt.Printf("BID: %s, FID: %s, RID: %s\n", strconv.Itoa(buildingID), strconv.Itoa(floorID), strconv.Itoa(roomID))
 	occupancy := prev_occ + r.Random()
 	fmt.Printf("%f", occupancy)
 	myMetric := []influxdb.Metric{
 		influxdb.NewRowMetric(
 			map[string]interface{}{"occupancy": occupancy},
 			"Sensor Readings",
-			map[string]string{"Hostname": "TestBox1", "ID": "001"},
+			map[string]string{"Hostname": "TestBox1", "BuildingID": strconv.Itoa(buildingID), "FloorID": strconv.Itoa(floorID), "RoomID": strconv.Itoa(roomID)},
 			time.Now()),
 	}
+	// _, err := influx.Write(context.Background(), "sjb786's Bucket", "833c7fbc1d19c9be", myMetric...)
 	_, err := influx.Write(context.Background(), "my-test-bucket", "833c7fbc1d19c9be", myMetric...)
 	if err != nil {
 		log.Fatal(err) // as above use your own error handling here.
