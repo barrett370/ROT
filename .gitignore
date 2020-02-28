@@ -4,3 +4,7 @@ themes/
 .env
 bin/
 node_modules/
+
+.firebase/
+.firebaserc 
+public/
