@@ -82,11 +82,17 @@ func initRoomCounter(db *influxdb.Client) (int, error) {
 		BuildingID = strconv.Itoa(readings[0].BuildingID)
 		fmt.Printf("Initial Occupancy: %f", readings[0].Value)
 		FloorID = strconv.Itoa(readings[0].FloorID)
+		if readings[0].Value > 1000{
+			return 0,nil
+		}
 		return int(readings[0].Value), nil
 	} else {
 		BuildingID = strconv.Itoa(readings[0].BuildingID)
 		FloorID = strconv.Itoa(readings[0].FloorID)
 		fmt.Printf("Initial Occupancy: %f", readings[0].Value)
+		if readings[0].Value > 1000{
+			return 0,nil
+		}
 		return int(readings[0].Value), nil
 	}
 }
