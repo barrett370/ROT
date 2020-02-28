@@ -136,7 +136,9 @@ func main() {
 			log.Print(err)
 		}
 		log.Println(ival)
-		roomCounter += ival
+		if !(ival > 1) {
+			roomCounter += ival
+		}
 		err = updateDBRoomCounter(db, roomCounter)
 		if err != nil {
 			log.Print(err)
