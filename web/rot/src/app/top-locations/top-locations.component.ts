@@ -20,7 +20,7 @@ export class TopLocationsComponent implements OnInit {
         building.id,
         IDTypes.BID
       );
-      ret.push({ name: building.name, percent: occ / building.max_occupancy });
+      ret.push({ name: building.name, percent: occ / building.max_occupancy *100});
     });
     return ret;
   }

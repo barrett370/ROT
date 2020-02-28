@@ -8,9 +8,9 @@
                 "id": 101,
                 "rooms": [
                     {
-                        "name": "Room 101",
+                        "name": "Sensor Test Room",
                         "id": 1001,
-                        "max_occupancy": 20
+                        "max_occupancy": 10
                     },
                     {
                         "name": "Room 102",

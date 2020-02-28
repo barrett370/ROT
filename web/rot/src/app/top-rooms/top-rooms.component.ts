@@ -21,11 +21,12 @@ export class TopRoomsComponent implements OnInit {
     locations.slice(0,1).forEach(building => {
       building.floors.slice(0,1).forEach(floor => {
         floor.rooms.slice(0, n).forEach(async room => {
+          console.log(room.id)
           const occ = await this.webServerInterface.getOccupancy(
             room.id,
             IDTypes.RID
           );
-          ret.push({ name: room.name, percent: occ / room.max_occupancy });
+          ret.push({ name: room.name, percent: occ / room.max_occupancy * 100 });
         });
       });
     });
