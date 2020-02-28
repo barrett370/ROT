@@ -59,17 +59,14 @@ func initRoomCounter(db *influxdb.Client) (int, error) {
   |> filter(fn: (r) => r.RoomID == "%s")
   |> last()`, "-30d", RoomID)
 
-	println(q)
 	resp, err := db.QueryCSV(context.Background(), q, "833c7fbc1d19c9be")
 	if err != nil {
 		return 0, err
 	}
 	readings := make([]SensorData, 0)
 	for resp.Next() {
-		fmt.Printf("%+v", resp)
 		reading := SensorData{}
 		err = resp.Unmarshal(&reading)
-		fmt.Printf("reading:%+v", reading)
 		if err != nil {
 			return 0, err
 		}
