@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Progress on Room Occupancy Tracking</title>
+    <link>/progress/</link>
+    <description>Recent content in Progress on Room Occupancy Tracking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    
+	<atom:link href="/progress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

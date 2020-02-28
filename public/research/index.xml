@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Room Occupancy Tracking</title>
+    <link>/research/</link>
+    <description>Recent content in Research on Room Occupancy Tracking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Thu, 20 Feb 2020 14:24:39 +0000</lastBuildDate>
+    
+	<atom:link href="/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Survey: Students</title>
+      <link>/research/student/</link>
+      <pubDate>Thu, 20 Feb 2020 14:24:39 +0000</pubDate>
+      
+      <guid>/research/student/</guid>
+      <description>From the interview conducted here we can see that the current system fails to live up to the expectation of the main user-group, leaving a lot of room for improvement for our service.
+Do you currently use the University&amp;rsquo;s room occupancy tracking system? No Why wouldn&amp;rsquo;t you use the current system, if not? Have you ever used it? If &amp;lsquo;Yes&amp;rsquo;, what is the main reason you no longer use it? Yes Do you like the current system?</description>
+    </item>
+    
+    <item>
+      <title>Interview: Students</title>
+      <link>/research/university-students/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research/university-students/</guid>
+      <description>Are you familiar with the current room occupancy system the University implements? Student A: Yes, I&amp;rsquo;ve used a library room booking system as well as to check general availability in the Library during study periods.
+Student B: No - none of my study spaces implement or advertise this.
+Student C: Nah - never heard of it.
+Student D: I&amp;rsquo;ve seen it advertised on the library page but I have never used it - I don&amp;rsquo;t know how really.</description>
+    </item>
+    
+    <item>
+      <title>Interview: University Staff</title>
+      <link>/research/university-staff/</link>
+      <pubDate>Thu, 20 Feb 2020 13:33:29 +0000</pubDate>
+      
+      <guid>/research/university-staff/</guid>
+      <description>Have you ever used the current system for checking room capacity? If so, how regularly do you use this system? I have tried using the system several times.
+What do you like about the current system? Not much, most of the rooms listed are primarily for students so doesn’t relate to myself or my colleagues.
+What do you not like about the current system? It seems that the majority of the time the service is down whenever I have tried it.</description>
+    </item>
+    
+    <item>
+      <title>Interview: Developer</title>
+      <link>/research/developer/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/research/developer/</guid>
+      <description>Introduction This interview was conducted with a software developer who has experience developing on top of a range of IoT devices.
+Interview I: What possible applications could you see for an API based on top of this project? D: I could imagine a whole array of projects, this sort of data could be linked in with a wide array of functionality when it comes to actual use of the buildings. For example you could make something where if someone is looking for a study space it will tell them which ones are free, so they don&amp;rsquo;t have to spend their vital time searching for a space to sit.</description>
+    </item>
+    
+    <item>
+      <title>Focus Group: Office workers</title>
+      <link>/research/office/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research/office/</guid>
+      <description>Do you have a system for tracking free space? Currently no, the system at present is:
+ Teams currently get priority on some desks We have some assigned desks which can be used but have to be vacated if the assigned person turns up. Currently have to walk around to find a desk. Limited standing desks, but don&amp;rsquo;t know where they are. Desks have different facilities (screens etc), some stuff broken.</description>
+    </item>
+    
+    <item>
+      <title>Persona: Peter</title>
+      <link>/research/persona/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research/persona/</guid>
+      <description>Peter : Profile  Peter doens&amp;rsquo;t have lectures everyday but tries to keep up with outside reading and his assignments in the library - if he doesn&amp;rsquo;t have lectures he will try and spend a couple hours in the library to keep himself productive Peter is pretty relaxed about where he sits - as long as he has access to a computer Peter can&amp;rsquo;t afford a laptop so library computer access is very important to him Peter reads and takes out books a lot - he is a avid user on the library system Peter commutes from Redditch - he takes a train and a bus which takes around 50 mins in total one way from home to University Peter suffers from Chronic Fatigue Syndrome - he needs to sleep for 9 or 10 hours each day to feel energised.</description>
+    </item>
+    
+    <item>
+      <title>Persona: Ricardo</title>
+      <link>/research/ricardo_persona/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research/ricardo_persona/</guid>
+      <description>Ricardo: Profile  Ricardo needs to use his department&amp;rsquo;s labs to complete assignments. Ricardo wants to be able to secure a lab machine that has working monitors. Ricardo has a laptop so is open to study spaces that don&amp;rsquo;t have computers. Ricardo lives in Selly Oak and has a 20 minute commute to the Computer Science Building.</description>
+    </item>
+    
+    <item>
+      <title>UI Layout</title>
+      <link>/research/ui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research/ui/</guid>
+      <description>Introduction The layout of the UI is something which should be thought about for multiple reasons. The layout will affect what the user interact with and how easily they interact with it. A poorly laid user interface may mean that your best features never get used. In this section we are going to explore the interface for a typical student user.
+What&amp;rsquo;s Important? It&amp;rsquo;s important that we identify what is important to our user so we can make it available to them.</description>
+    </item>
+    
+    <item>
+      <title>Occupancy Data Interpretation</title>
+      <link>/research/occupancy-data-interpretation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research/occupancy-data-interpretation/</guid>
+      <description>Percentage % This metric is similar to colour in the sense that it is abstract. It does not tell the user exactly how many seats are left but does give them an impression of room fullness. This is useful for users who only care about the feel of the room, ie how &amp;ldquo;packed it is&amp;rdquo;.
+Seats Left Seats left provides the most exact details. This metric is perfect for users who don&amp;rsquo;t really care about how full the room is just want to find a seat or a specific number of seats.</description>
+    </item>
+    
+    <item>
+      <title>Physical Design</title>
+      <link>/research/physical-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research/physical-design/</guid>
+      <description>The aim of the physical devices is set and forget. Once installed in place they shouldn&amp;rsquo;t need to be touch physically and should be left alone. In this section we will look into possible designs to achieve this.
+Don&amp;rsquo;t touch A number of methods can be used to make people not tamper with objects. One of these is to make it extremely obvious that you want people not to touch it.</description>
+    </item>
+    
+    <item>
+      <title>Current Solutions</title>
+      <link>/research/current-solutions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research/current-solutions/</guid>
+      <description>Density.io Density offers a solution to room occupancy monitoring that uses active IR sensors and time of flight (TOF) to detect humans entering and exiting rooms.
+Additional features of this solution are security applications, the main being detecting ‘tailgaters’ into buildings. This is where an unauthorised visitor gains access to the building by following an authorised member in.
+A safety feature that they also offer is employee mustering, being able to detect how many people are in locations in case of evacuation.</description>
+    </item>
+    
+  </channel>
+</rss>

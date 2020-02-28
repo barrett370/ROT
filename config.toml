@@ -14,4 +14,9 @@ home = [ "HTML", "RSS", "JSON"]
 [[menu.shortcuts]]
 name = "<i class='fas fa-bullhorn'></i> Progress"
 url = "/progress"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 weight = 30

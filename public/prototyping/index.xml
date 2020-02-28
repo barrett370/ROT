@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prototyping on Room Occupancy Tracking</title>
+    <link>/prototyping/</link>
+    <description>Recent content in Prototyping on Room Occupancy Tracking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    
+	<atom:link href="/prototyping/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basic InfluxDB implementation</title>
+      <link>/prototyping/basic-demo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/prototyping/basic-demo/</guid>
+      <description>After our initial research into InfluxDB and it&amp;rsquo;s client libraries, we decided to complete a trial implementation using Golang as it offered a fast, compiled language that lent itself well to embedded systems and has excellent networking and json parsing libraries.
+package main import ( &amp;#34;context&amp;#34; &amp;#34;encoding/json&amp;#34; &amp;#34;fmt&amp;#34; &amp;#34;io/ioutil&amp;#34; &amp;#34;log&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;os&amp;#34; &amp;#34;time&amp;#34; fsnotify &amp;#34;github.com/fsnotify/fsnotify&amp;#34; influxdb &amp;#34;github.com/influxdata/influxdb-client-go&amp;#34; ) var INFLUX_TOKEN string func DBConnect() (*influxdb.Client, error) { client := http.Client{} return influxdb.</description>
+    </item>
+    
+  </channel>
+</rss>

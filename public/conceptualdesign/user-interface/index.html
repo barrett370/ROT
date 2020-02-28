@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.65.3" />
+    <meta name="description" content="A look into the design of user interfaces">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>User Interface :: Room Occupancy Tracking</title>
+
+    
+    <link href="/css/nucleus.css?1582907060" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1582907060" rel="stylesheet">
+    <link href="/css/hybrid.css?1582907060" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1582907060" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1582907060" rel="stylesheet">
+    <link href="/css/auto-complete.css?1582907060" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1582907060" rel="stylesheet">
+    <link href="/css/theme.css?1582907060" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1582907060" rel="stylesheet">
+    
+      <link href="/css/theme-red.css?1582907060" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1582907060"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/conceptualdesign/user-interface/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a align="left" id="logo" href="">
+    <h4 style="color: white !important;" id="the-logo"><b><u>R</u>oom <br /> <u>O</u>ccupancy <br /> <u>T</u>racking</b>
+        </h1>
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1582907060"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1582907060"></script>
+<script type="text/javascript">
+    
+        var baseurl = "";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1582907060"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/research/" title="Research" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/research/">
+          <b>1. </b>Research
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/research/student/" title="Survey: Students" class="dd-item ">
+        <a href="/research/student/">
+        <b>1.1 </b>Survey: Students
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/research/university-students/" title="Interview: Students" class="dd-item ">
+        <a href="/research/university-students/">
+        <b>1.2 </b>Interview: Students
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/research/university-staff/" title="Interview: University Staff" class="dd-item ">
+        <a href="/research/university-staff/">
+        <b>1.3 </b>Interview: University Staff
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/research/developer/" title="Interview: Developer" class="dd-item ">
+        <a href="/research/developer/">
+        <b>1.4 </b>Interview: Developer
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/research/office/" title="Focus Group: Office workers" class="dd-item ">
+        <a href="/research/office/">
+        <b>1.5 </b>Focus Group: Office workers
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/research/persona/" title="Persona: Peter" class="dd-item ">
+        <a href="/research/persona/">
+        <b>1.6 </b>Persona: Peter
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/research/ricardo_persona/" title="Persona: Ricardo" class="dd-item ">
+        <a href="/research/ricardo_persona/">
+        <b>1.7 </b>Persona: Ricardo
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/research/ui/" title="UI Layout" class="dd-item ">
+        <a href="/research/ui/">
+        <b>1.8 </b>UI Layout
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/research/occupancy-data-interpretation/" title="Occupancy Data Interpretation" class="dd-item ">
+        <a href="/research/occupancy-data-interpretation/">
+        <b>1.9 </b>Occupancy Data Interpretation
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/research/physical-design/" title="Physical Design" class="dd-item ">
+        <a href="/research/physical-design/">
+        <b>1.10 </b>Physical Design
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/research/current-solutions/" title="Current Solutions" class="dd-item ">
+        <a href="/research/current-solutions/">
+        <b>1.11 </b>Current Solutions
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/conceptualdesign/" title="Conceptual Design" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/conceptualdesign/">
+          <b>2. </b>Conceptual Design
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/conceptualdesign/device-design-ideas/" title="Device Design Ideas" class="dd-item ">
+        <a href="/conceptualdesign/device-design-ideas/">
+        <b>2.1 </b>Device Design Ideas
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/conceptualdesign/topologies/" title="Topologies" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/conceptualdesign/topologies/">
+          <b>2.2 </b>Topologies
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/conceptualdesign/topologies/sensormesh/" title="Sensor Mesh" class="dd-item ">
+        <a href="/conceptualdesign/topologies/sensormesh/">
+        Sensor Mesh
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/conceptualdesign/topologies/tree/" title="Worker Sensors" class="dd-item ">
+        <a href="/conceptualdesign/topologies/tree/">
+        Worker Sensors
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/conceptualdesign/what-to-show/" title="What data do we want to show?" class="dd-item ">
+        <a href="/conceptualdesign/what-to-show/">
+        <b>2.3 </b>What data do we want to show?
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/conceptualdesign/user-interface/" title="User Interface" class="dd-item active">
+        <a href="/conceptualdesign/user-interface/">
+        <b>2.4 </b>User Interface
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/technicaldesign/" title="Technical Design" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/technicaldesign/">
+          <b>3. </b>Technical Design
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/technicaldesign/softwaretooling/" title="Software tooling" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/technicaldesign/softwaretooling/">
+          <b>3.1 </b>Software tooling
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/prototyping/" title="Prototyping" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/prototyping/">
+          <b>4. </b>Prototyping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/prototyping/basic-demo/" title="Basic InfluxDB implementation" class="dd-item ">
+        <a href="/prototyping/basic-demo/">
+        <b>4.1 </b>Basic InfluxDB implementation
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/prototyping/hifi/" title="HiFi ProtoType" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/prototyping/hifi/">
+          <b>4.2</b>HiFi ProtoType
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="/progress"><i class='fas fa-bullhorn'></i> Progress</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Home</a> > <a href='/conceptualdesign/'>Conceptual Design</a> > User Interface
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#standing-on-the-shoulders-of-giants">Standing on the shoulders of giants</a></li>
+    <li><a href="#ease">Ease</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#colour">Colour</a></li>
+    <li><a href="#presenting-data">Presenting Data</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              User Interface
+            </h1>
+          
+
+        
+
+
+
+<h2 id="introduction">Introduction</h2>
+<p>The user interface is of extreme importance to this project, as it is the portal to which the user will actually experience the product. A user interface is make or break when it comes to a users interactions and impressions of your project. If the data is there but it is tedious to access and presented in ways which are not intuitive and easy to read then people will not want to use your product. An example of this is the universities timetabling system, a system so bad users are happy to hand over their login details to a random party just so they can get out of using it.</p>
+<h2 id="standing-on-the-shoulders-of-giants">Standing on the shoulders of giants</h2>
+<p>Some of the best design at the moment is carried out by the tech giants. Luckily for us these companies have guides on their styles and designs.</p>
+<p>Google is leading edge in design and has comprehensive guides on its style along with a number of different tools such as free icons and visually impaired friendly colour pickers. Along with a whole range of tools which allow for assessing how disability friendly your design is and helping you improve it.</p>
+<p>These resources can be found at <a href="https://design.google/resources/">https://design.google/resources/</a>. Many other companies have similar style guides.</p>
+<h2 id="ease">Ease</h2>
+<p>When it comes to UI design our main focus should be around ease of use. This can be achieved by working out which tools are important to the user and putting them as the easiest to get to.</p>
+<p>With the idea of ease of use comes cleanliness. Having a clean and simple design can help with ease of use as it means that the user knows exactly where to look for what they need as they are the only things which they can see. Of course you can always go too far in the other direction and make a design which is too clean and in this case you limit the user as it hides the functionality.</p>
+<p>One of the main design principles at the moment is material design. This design can be found across the google suite of products including android. This design methodology strongly follows the idea of clean and simple design in order to help the user. Everything in your design should be intuitive, removing the need for long explanatory tool tips or large manuals.</p>
+<h4 id="great-design-is-transparent">&ldquo;Great design is transparent&rdquo;</h4>
+<p>For our project we will be following these guides.</p>
+<h2 id="colour">Colour</h2>
+<p>Colour can often be overlooked as just an aesthetic choice, but colour can play a large role in guiding the user through your interface. An example of this is using a consistent colour scheme throughout your interface. Having titles in one colour, subheadings in another and buttons in another, means that the user knows exactly what they are looking at and if they can interact it just by looking at the colour.</p>
+<p>It is extremely important that you think about what colours you want to use, especially as your content is going to be viewed on a number of different devices with different screens and by people with different visual abilities.</p>
+<p>Some colour may look great on your device but what about devices which manipulate the colour such as night light software to change the hue to a much warmer one during the night.</p>
+<p>On top of this in this day and age there is a huge demand for a dark mode. Thoughts need to be given to a colour scheme which is dark and can take advantage of OLED technology to save energy.</p>
+<p>The final and most important aspect of colour is visibility. The text should be easily readable. This means picking two highly contrasting colours for text and background. The higher the contrasting the easier it is to read for all abilities including those with partial sight. Google has a great tool for this which automatically picks colours for your text based on your background and will tell you how accessable they are: <a href="https://material.io/resources/color">https://material.io/resources/color</a>.</p>
+<p><img src="/images/uploads/colour.PNG" alt="" title="Google Colour Picker"></p>
+<h2 id="presenting-data">Presenting Data</h2>
+<p>Another aspect we have thought about is how to present the data. As seen in other sections we having explored technologies such as grafana to do this but on a much lower level we need to think about what ways we want to present data.</p>
+<p>The most simplest of the methods would be a purely text based method which lists the rooms and then lists the occupancy. This approach is simple and easy to read and can often be found on websites status pages. Combined with colour it would make it the ideal choice if it was not for the fact that it struggles to scale as it can get messy with more and more locations.</p>
+<p><img src="/images/uploads/reddit.PNG" alt=""></p>
+<p>This can be expanded if you want to represent the status over time as can be seen below:</p>
+<p><img src="/images/uploads/reddit2.PNG" alt=""></p>
+<p>The above approach gives an abstracted view of the &ldquo;occupancy&rdquo; however it does not provide greater details. If this is needed then a graph like the one below. This graph gives you exact details and it is easy to spot the trend. However it does take up a lot of screen real estate.</p>
+<p><img src="/images/uploads/graphana.PNG" alt=""></p>
+<p>Moving away from the more traditional types of graphs, there are heat maps. These represent the data in a way which is easy to interpret to users who are not fully aware of room names as they can see it based on the floor plan. The downside of the heatmap is that if the user just wants to find a space on campus that is free they will have to check through each of the heat maps, as opposed to a table where they can just sort it via occupancy.</p>
+<p><img src="/images/uploads/heatmap.png" alt=""></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Each design has its pros and cons are serve different use cases. Management who want to monitor occupancy trends would find the graph most useful.</p>
+<p>Students on the other hand looking for a room would find the just list of rooms or heatmap most useful. A compromise between the two would be the most useful. For example at the top you list the rooms which have the lowest occupancy and below you show the heatmap. Therefor the data which you are presenting to the user first which is the most important to them is a suggestion of a couple of spaces which are free, and then if they are more picky about location or not aware where the rooms are they can consult the heat map.</p>
+<p><img src="/images/uploads/phone.png" alt=""></p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/conceptualdesign/what-to-show/" title="What data do we want to show?"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/technicaldesign/" title="Technical Design" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1582907060"></script>
+    <script src="/js/perfect-scrollbar.min.js?1582907060"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1582907060"></script>
+    <script src="/js/jquery.sticky.js?1582907060"></script>
+    <script src="/js/featherlight.min.js?1582907060"></script>
+    <script src="/js/highlight.pack.js?1582907060"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1582907060"></script>
+    <script src="/js/learn.js?1582907060"></script>
+    <script src="/js/hugo-learn.js?1582907060"></script>
+
+    <link href="/mermaid/mermaid.css?1582907060" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1582907060"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

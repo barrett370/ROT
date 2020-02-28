@@ -3,3 +3,11 @@
 .env
 bin/
 node_modules/
+**/node_modules/*
+**/.firebaserc
+
+### Firebase Patch ###
+.runtimeconfig.json
+.firebase/
+
+
