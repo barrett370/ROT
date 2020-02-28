@@ -38,6 +38,7 @@ func readSerial(port io.ReadWriteCloser) {
 	readSerial(port)
 }
 
+// SensorData is a Struct for storing information resulting from InfluxDB Query
 type SensorData struct {
 	Time       time.Time `flux:"_time" json:"time"`
 	Field      string    `flux:"_field" json:"field"`
@@ -47,6 +48,7 @@ type SensorData struct {
 	RoomID     int       `flux:"RoomID" json:"roomID"`
 }
 
+// DBConnect given an access token creates an influxdb client for interfacing with the DB
 func DBConnect(InfluxToken string) (*influxdb.Client, error) {
 	// You can generate a Token from the "Tokens Tab" in the UI
 	client := http.Client{}
@@ -87,8 +89,8 @@ func initRoomCounter(db *influxdb.Client) (int, error) {
 		fmt.Printf("Initial Occupancy: %f", readings[0].Value)
 		return int(readings[0].Value), nil
 	}
-
 }
+
 func updateDBRoomCounter(db *influxdb.Client, occupancy int) error {
 	myMetric := []influxdb.Metric{
 		influxdb.NewRowMetric(
@@ -102,10 +104,14 @@ func updateDBRoomCounter(db *influxdb.Client, occupancy int) error {
 }
 
 var (
+	// InfluxToken allows access to the InfluxDB database BUILDTIME INJECTION
 	InfluxToken string
-	RoomID      string
-	FloorID     string
-	BuildingID  string
+	// RoomID stores the roomID of the room the system running this script is deployed to BUILDTIME INJECTION
+	RoomID string
+	// FloorID stores the floorID of the room specified by RoomID
+	FloorID string
+	// BuildingID stores the buildingID of the room specified by RoomID
+	BuildingID string
 )
 
 func main() {
@@ -145,5 +151,4 @@ func main() {
 		}
 
 	}
-	// readSerial(s)
 }

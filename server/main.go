@@ -56,6 +56,7 @@ type Response struct {
 	Occupancy float64 `json:"occupancy"`
 }
 
+// ErrorResponse allows for errors to be sent by the API on bad requests
 type ErrorResponse struct {
 	Response string `json: response`
 }
@@ -127,7 +128,7 @@ func (db *DB) calcOccupancy(w http.ResponseWriter, r *http.Request) {
 		readings = append(readings, reading)
 	}
 	if len(readings) == 0 {
-		println("ERROR: no data in database") // todo check if this is desired
+		println("ERROR: no data in database") // todo check if this is desired behaviour
 	} else if len(readings) > 1 {
 		sumOcc := 0.0
 		for _, each := range readings {
