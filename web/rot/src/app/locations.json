@@ -1,0 +1,294 @@
+[
+    {
+        "name": "CS",
+        "id": 1,
+        "floors": [
+            {
+                "name": "Floor 1",
+                "id": 101,
+                "rooms": [
+                    {
+                        "name": "Sensor Test Room",
+                        "id": 1001,
+                        "max_occupancy": 10
+                    },
+                    {
+                        "name": "Room 102",
+                        "id": 1002,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 103",
+                        "id": 1003,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 104",
+                        "id": 1004,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 105",
+                        "id": 1005,
+                        "max_occupancy": 20
+                    }
+                ]
+            },{
+                "name": "Floor 2",
+                "id": 102,
+                "rooms": [
+                    {
+                        "name": "Room 201",
+                        "id": 1006,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 202",
+                        "id": 1007,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 203",
+                        "id": 1008,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 204",
+                        "id": 1009,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 205",
+                        "id": 1010,
+                        "max_occupancy": 20
+                    }
+                ]
+            },{
+                "name": "Floor 3",
+                "id": 103,
+                "rooms": [
+                    {
+                        "name": "Room 301",
+                        "id": 1011,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 302",
+                        "id": 1012,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 303",
+                        "id": 1013,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 304",
+                        "id": 1014,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 305",
+                        "id": 1015,
+                        "max_occupancy": 20
+                    }
+                ]
+            }
+        ],
+        "max_occupancy": 400
+    },{
+        "name": "Library",
+        "id": 2,
+        "floors": [
+            {
+                "name": "Floor 1",
+                "id": 104,
+                "rooms": [
+                    {
+                        "name": "Room 101",
+                        "id": 1016,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 102",
+                        "id": 1017,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 103",
+                        "id": 1018,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 104",
+                        "id": 1019,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 105",
+                        "id": 1020,
+                        "max_occupancy": 20
+                    }
+                ]
+            },{
+                "name": "Floor 2",
+                "id": 105,
+                "rooms": [
+                    {
+                        "name": "Room 201",
+                        "id": 1021,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 202",
+                        "id": 1022,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 203",
+                        "id": 1023,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 204",
+                        "id": 1024,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 205",
+                        "id": 1025,
+                        "max_occupancy": 20
+                    }
+                ]
+            },{
+                "name": "Floor 3",
+                "id": 106,
+                "rooms": [
+                    {
+                        "name": "Room 301",
+                        "id": 1026,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 302",
+                        "id": 1027,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 303",
+                        "id": 1028,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 304",
+                        "id": 1029,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 305",
+                        "id": 1030,
+                        "max_occupancy": 20
+                    }
+                ]
+            }
+        ],
+        "max_occupancy": 1000
+    },{
+        "name": "Guild of Students",
+        "id": 3,
+        "floors": [
+            {
+                "name": "Floor 1",
+                "id": 107,
+                "rooms": [
+                    {
+                        "name": "Room 101",
+                        "id": 1031,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 102",
+                        "id": 1032,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 103",
+                        "id": 1033,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 104",
+                        "id": 1034,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 105",
+                        "id": 1035,
+                        "max_occupancy": 20
+                    }
+                ]
+            },{
+                "name": "Floor 2",
+                "id": 108,
+                "rooms": [
+                    {
+                        "name": "Room 201",
+                        "id": 1036,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 202",
+                        "id": 1037,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 203",
+                        "id": 1038,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 204",
+                        "id": 1039,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 205",
+                        "id": 1040,
+                        "max_occupancy": 20
+                    }
+                ]
+            },{
+                "name": "Floor 3",
+                "id": 109,
+                "rooms": [
+                    {
+                        "name": "Room 301",
+                        "id": 1041,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 302",
+                        "id": 1042,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 303",
+                        "id": 1043,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 304",
+                        "id": 1044,
+                        "max_occupancy": 20
+                    },
+                    {
+                        "name": "Room 305",
+                        "id": 1045,
+                        "max_occupancy": 20
+                    }
+                ]
+            }
+        ],
+        "max_occupancy": 500
+    }
+]

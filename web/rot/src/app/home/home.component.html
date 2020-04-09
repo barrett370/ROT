@@ -1,5 +1,5 @@
 
-<div class="card-group">
+<div *ngIf="!mobile; else elseBlock" class="card-group">
     <div class="card">
         <div class="card-body">
           <app-top-rooms></app-top-rooms>
@@ -15,4 +15,25 @@
   </div>
 
 </div>
+<ng-template #elseBlock>
+  
+  <!-- <div  class="card-group"> -->
+    <!-- <div class="card"> -->
+
+          <app-top-rooms></app-top-rooms>
+
+    <!-- </div> -->
+    <!-- <div class="card"> -->
+
+          <app-top-locations></app-top-locations>
+
+    <!-- </div> -->
+    <div class="card">
+      <div id="gauge" class="200x160px"></div>
+  </div>
+
+<!-- </div> -->
+
+
+</ng-template>
 
