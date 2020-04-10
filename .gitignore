@@ -11,4 +11,4 @@ public/
 .runtimeconfig.json
 .firebase/
 
-
+gen/
