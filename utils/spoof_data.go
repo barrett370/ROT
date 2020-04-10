@@ -102,19 +102,34 @@ func main() {
 	flag.IntVar(&buildingID, "b", -1, "Building ID")
 	flag.IntVar(&floorID, "f", -1, "Floor ID")
 	flag.IntVar(&roomID, "r", -1, "Room ID")
+	var val int
+	flag.IntVar(&val, "v", 0, "Val to set")
 
 	flag.Parse()
 	if buildingID == -1 || floorID == -1 || roomID == -1 {
 		log.Fatal("Please enter valid building, floor and room ids")
 	}
+
 	influx, err := DBConnect(INFLUX_TOKEN)
 	if err != nil {
 		panic(err)
 	}
 	//source := rand.NewSource(10)
 	// rand := rand.New(source)
-	rand, err := NewGenerator(10, []float64{-1.0, 0.0, 1.0}, []float64{0.25, 0.5, 0.25})
-	spoof_data(influx, *rand, 100, 10)
+	if val == 0 {
+		rand, err := NewGenerator(10, []float64{-1.0, 0.0, 1.0}, []float64{0.25, 0.5, 0.25})
+		if err != nil {
+			log.Fatal(err)
+		}
+		spoof_data(influx, *rand, 100, 10)
+	} else {
+		rand, err := NewGenerator(10, []float64{float64(val)}, []float64{1})
+		if err != nil {
+			log.Fatal(err)
+		}
+		spoof_data(influx, *rand, 0, 0)
+	}
+
 	// The actual write..., this method can be called concurrently.
 }
 
@@ -143,7 +158,7 @@ func spoof_data(influx *influxdb.Client, r Generator, repeats int, prev_occ floa
 	}
 	if repeats > 0 {
 		//spoof_data(influx, r, repeats+-1)
-		spoof_data(influx, r, repeats, occupancy)
+		spoof_data(influx, r, repeats+-1, occupancy)
 	}
 
 	//

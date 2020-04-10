@@ -34,6 +34,7 @@ export class TopRoomsComponent implements OnInit {
   }
 
   get_top_rooms() {
+    console.log("Getting top 3 rooms")
     let ret = this.get_all_rooms(3);
     ret.sort((o1, o2) => {
       if (o1.percent < o2.percent) {
